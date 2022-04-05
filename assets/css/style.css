@@ -1,0 +1,2101 @@
+ @font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: url("~assets/fonts/oswald.ttf");
+}
+body {
+	background: url("~assets/img/bg.jpg") top center no-repeat #fff;
+	color: #575757;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	line-height: 150%;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span.title1,
+span.title2,
+span.title3,
+span.title4,
+span.title5,
+span.title6 {
+	font-family: "Oswald";
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	line-height: 120%;
+	text-transform: uppercase;	
+	display: block;
+	clear: both;
+}
+
+h1,
+span.title1 {
+	font-size: 36px;
+}
+
+h2,
+span.title2 {
+	font-size: 30px;
+}
+
+h3,
+span.title3 {
+	font-size: 24px;
+}
+
+h4,
+span.title4 {
+	font-size: 18px;
+}
+
+h5,
+span.title5 {
+	font-size: 14px;
+}
+
+h6,
+span.title6 {
+	font-size: 12px;
+}
+b,
+strong {
+	font-weight: bold;
+	color: #00B000;
+}
+
+a {
+	color: #333;
+}
+
+p a {
+	color: #666;
+	font-weight: bold;
+}
+
+em {
+	color: #6c6c6c;
+    font-weight: bolder;
+}
+
+a:hover,
+a:active {
+	color: #575757;
+}
+
+hr {
+	border-color: #e7e7e7;
+}
+
+blockquote {
+	border: transparent; 
+	font-size: 25px; 
+	line-height: 125%;
+	margin: 25px 0; 
+	text-align: center; 
+	font-style: italic; 
+	font-family: 'Oswald';
+	color: #00B000; 
+	text-transform: uppercase;
+}
+.nopadding {
+	padding: 0;
+}
+
+.padding {
+	padding: 50px 0;
+}
+
+.margin {
+	margin: 25px 0;
+}
+
+.add-top {
+	margin-top: 35px;
+}
+
+.container {
+	max-width: 1140px;
+}
+
+.box {
+	background: #fff;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+.box.rounded {
+	margin-top: 10px;
+	height: 230px;
+}
+
+
+
+.box.rounded .stars {
+	font-size: 28px;
+}
+
+.box.rounded p.quote {
+	text-align: center;
+	margin: 0;
+	padding-bottom: 15px;
+	padding-top: 20px;
+}
+
+
+
+.box h5,
+.box span.title5 {
+	font-size: 20px;
+	line-height: 100%;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 5px;
+	color: #fff;
+	background: #00B000;
+	background: -webkit-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:    -moz-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:      -o-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:     -ms-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:         linear-gradient(top bottom, #00B000 0%, #008000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00B000', endColorstr='#008000',GradientType=0 );
+	-webkit-border-radius: 5px 5px 0 0;	   
+	   -moz-border-radius: 5px 5px 0 0;
+	        border-radius: 5px 5px 0 0;
+}
+
+.box h5.black,
+.box span.title5.black {
+	color: #fff;
+	background: #222;
+	background: -webkit-linear-gradient(top,        #333333 0%, #222222 100%);
+	background:    -moz-linear-gradient(top,        #333333 0%, #222222 100%);
+	background:      -o-linear-gradient(top,        #333333 0%, #222222 100%);
+	background:     -ms-linear-gradient(top,        #333333 0%, #222222 100%);
+	background:         linear-gradient(top bottom, #333333 0%, #222222 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#222222',GradientType=0 );
+}
+
+.box h5.blue,
+.box span.title5.blue {
+	color: #fff;
+	background: #3554B0;
+	background: -webkit-linear-gradient(top,        #4D66B9 0%, #3554B0 100%);
+	background:    -moz-linear-gradient(top,        #4D66B9 0%, #3554B0 100%);
+	background:      -o-linear-gradient(top,        #4D66B9 0%, #3554B0 100%);
+	background:     -ms-linear-gradient(top,        #4D66B9 0%, #3554B0 100%);
+	background:         linear-gradient(top bottom, #4D66B9 0%, #3554B0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4D66B9', endColorstr='#3554B0',GradientType=0 );
+}
+.box h5.red,
+.box span.title5.red {
+	color: #fff;
+	background: #E02400;
+	background: -webkit-linear-gradient(top,        #E84E2C 0%, #E02400 100%);
+	background:    -moz-linear-gradient(top,        #E84E2C 0%, #E02400 100%);
+	background:      -o-linear-gradient(top,        #E84E2C 0%, #E02400 100%);
+	background:     -ms-linear-gradient(top,        #E84E2C 0%, #E02400 100%);
+	background:         linear-gradient(top bottom, #E84E2C 0%, #E02400 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E84E2C', endColorstr='#E02400',GradientType=0 );
+}
+
+.box h5.white,
+.box span.title5.white {
+	color: #222;
+	background: #fff;
+	background: -webkit-linear-gradient(top,        #ffffff 20%, #e1e1e1 100%);
+	background:    -moz-linear-gradient(top,        #ffffff 20%, #e1e1e1 100%);
+	background:      -o-linear-gradient(top,        #ffffff 20%, #e1e1e1 100%);
+	background:     -ms-linear-gradient(top,        #ffffff 20%, #e1e1e1 100%);
+	background:         linear-gradient(top bottom, #ffffff 20%, #e1e1e1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e1e1',GradientType=0 );
+}
+
+
+
+nav.navbar .navbar-header,
+nav.navbar #navbar {
+	background: #00B000;
+	background: -webkit-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:    -moz-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:      -o-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:     -ms-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:         linear-gradient(top bottom, #00B000 0%, #008000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00B000', endColorstr='#008000',GradientType=0 );
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	        font-size: 13.8px;
+}
+
+@media (max-width: 767px) {
+	nav.navbar #navbar {
+		background: #fff;
+		font-size: 15px;
+	}
+
+	ul.nav > li > a {
+		color: #575757!important;
+		padding: 5px 7px;
+	}
+
+	ul.nav > li.active,
+	ul.nav > li:hover,
+	ul.nav > li.dropdown.open > a {
+		background-color: rgba(0, 0 , 0, 0.1)!important;
+		border-style: none;
+		-webkit-border-radius: 0!important;
+	       -moz-border-radius: 0!important;
+	            border-radius: 0!important;
+		-webkit-box-shadow: none!important;
+		   -moz-box-shadow: none!important;
+		        box-shadow: none!important;
+	}
+	section.content .box.casino {
+		background: transparent!important;
+	}
+}
+
+
+nav.navbar button {
+	color: #fff;
+}
+
+nav.navbar button:hover,
+nav.navbar button.open {
+	color: #ccc;
+}
+
+nav.navbar li {
+	color: #fff;
+	-webkit-transition: all 0.1s ease-in-out;
+	   -moz-transition: all 0.1s ease-in-out;
+	    -ms-transition: all 0.1s ease-in-out;
+	     -o-transition: all 0.1s ease-in-out;
+	        transition: all 0.1s ease-in-out;
+
+}
+
+ul.nav > li {
+	margin: 10px 10px 10px 0;
+}
+
+nav.navbar ul.nav span {
+	margin-right: 5px;
+}
+
+ul.nav > li.active,
+ul.nav > li:hover,
+ul.nav > li.dropdown.open > a {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	border-style: none;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.33);
+	   -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.33);
+	        box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.333);
+}
+
+ul.nav > li > a {
+	color: #fff;
+	padding: 5px 7px;
+}
+
+ul.nav > li.dropdown.open:hover,
+ul.nav > li > a:hover,
+ul.nav > li > a:active {
+	background: none;
+}
+
+a.btn-bcc {
+	font-family: "Oswald";
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 8px 25px;
+	border: none;
+	color: #fff;
+	background: #00B000;
+	background: -webkit-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:    -moz-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:      -o-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:     -ms-linear-gradient(top,        #00B000 0%, #008000 100%);
+	background:         linear-gradient(top bottom, #00B000 0%, #008000 100%);
+	white-space: pre-line;
+}
+
+a.btn-bcc.bonus {
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+	line-height: 100%;
+	color: #222;
+	background: -webkit-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:    -moz-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:      -o-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:     -ms-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:         linear-gradient(top bottom, #FACF0D 0%, #E1AA24 100%);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+
+}
+
+a.btn-bcc.test {
+text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+color: #222;
+font-size: 18px;
+margin-top: 15px;
+margin-bottom: 25px;
+	background: -webkit-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:    -moz-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:      -o-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:     -ms-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:         linear-gradient(top bottom, #FACF0D 0%, #E1AA24 100%);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	}
+
+a.btn-bcc.bonus:hover,
+a.btn-bcc.bonus:active {
+	color: #222;
+	background: -webkit-linear-gradient(top,        #FFE326 0%, #F7C13C 100%);
+	background:    -moz-linear-gradient(top,        #FFE326 0%, #F7C13C 100%);
+	background:      -o-linear-gradient(top,        #FFE326 0%, #F7C13C 100%);
+	background:     -ms-linear-gradient(top,        #FFE326 0%, #F7C13C 100%);
+	background:         linear-gradient(top bottom, #FFE326 0%, #F7C13C 100%);
+}
+
+a.btn-bcc.small {
+	font-size: 14px;
+}
+
+a.btn-bcc:hover,
+a.btn-bcc:active {
+	color: #fff;
+	background: #008000;
+	background: -webkit-linear-gradient(top,        #008000 0%, #006000 100%);
+	background:    -moz-linear-gradient(top,        #008000 0%, #006000 100%);
+	background:      -o-linear-gradient(top,        #008000 0%, #006000 100%);
+	background:     -ms-linear-gradient(top,        #008000 0%, #006000 100%);
+	background:         linear-gradient(top bottom, #008000 0%, #006000 100%);
+}
+
+header {
+	margin: 35px 0 15px 0; 
+}
+header img.banner {
+	width: 100%;
+	max-width: 728px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	right: 0;
+}
+
+
+.buttontest {
+float: right;
+margin-top:20px;
+margin-right:20px;
+}
+.buttontest:hover {
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+.logo {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background: url("~assets/img/casinovergleicher-logo-green.png") top center no-repeat;
+	width: 440px;
+	height: 60px;
+	display: block;
+    text-indent: -9999px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo {
+        background: url("~assets/img/casinovergleicher-logo-green@2x.png") 0 0 no-repeat;
+        background-size: 440px 60px;
+        width: 440px;
+        height: 60px;
+    }
+}
+
+nav.navbar .dropdown-menu a {
+	color: #575757;
+	text-transform: none;
+}
+
+
+
+
+
+
+
+
+section.banner {
+	margin-bottom: 10px;
+	color: #fff; 
+}
+
+section.banner ul {
+	list-style: none; 
+	padding: 0; 
+	padding-left: 20px; 
+}
+
+
+section.banner h1,
+section.banner h2,
+section.banner span.title2 {
+	line-height: 100%;
+	background: rgba(0,0,0, 0.67);
+	padding: 10px 20px;
+}
+
+section.banner .pull-right h1,
+section.banner .pull-right h2,
+section.banner .pull-right span.title2 {
+	   -webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	       -moz-border-radius-topleft: 5px;
+	    -moz-border-radius-bottomleft: 5px;
+	           border-top-left-radius: 5px;
+	        border-bottom-left-radius: 5px;
+}
+section.banner .pull-left h1,
+section.banner .pull-left h2,
+section.banner .pull-left span.title2 {
+	   -webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	       -moz-border-radius-topright: 5px;
+	    -moz-border-radius-bottomright: 5px;
+	           border-top-right-radius: 5px;
+	        border-bottom-right-radius: 5px;
+}
+
+
+
+section.banner.intro h3,
+section.banner.intro span.title3 {
+	line-height: 100%;
+	font-style: italic;
+	font-size: 30px;
+}
+
+section.banner.intro .box {
+	background: url("~assets/img/teaser-v3.jpg"); 
+	background-position: top right;
+	background-size: cover; 
+	height: 375px;
+}
+
+section.banner.intro .box.fantasia {
+	background: url("~assets/img/slider/fantasia.jpg"); 
+	background-position: top right;
+	background-size: cover; 
+	height: 375px;
+}
+
+section.banner.intro .box.xmas2015 {
+	background: url("~assets/img/slider/xmas2015-quasar-special.jpg"); 
+	background-position: top right;
+	background-size: cover; 
+	height: 375px;
+}
+
+section.banner.intro .box.eighteight {
+	background: url("~assets/img/slider/888.jpg"); 
+	background-position: top right;
+	background-size: cover; 
+	height: 375px;
+}
+
+section.banner.intro .box.stargames {
+	background: url("~assets/img/slider/stargames.jpg"); 
+	background-position: top right;
+	background-size: cover; 
+	height: 375px;
+}
+
+section.banner.intro .box.casinoclub {
+	background: url("~assets/img/slider/casinoclub.jpg"); 
+	background-position: top right;
+	background-size: cover; 
+	height: 375px;
+}
+
+section.banner .box {
+	background: url("~assets/img/teaser-v3.jpg"); 
+	background-position: top -130px right;
+	background-size: cover; 
+	height: 200px;
+}
+
+section.banner .box.bonusbanner {
+	background: url("~assets/img/banner-bonus-test.jpg"); 
+	background-position: top right;
+	background-size: cover; 
+	height: 205px;
+}
+
+section.banner .box.appsbanner {
+	background: url("~assets/img/banner-apps.jpg"); 
+	background-position: top 250px right;
+	background-size: cover; 
+	height: 205px;
+}
+
+section.banner .box.casinosbanner {
+	background: url("~assets/img/banner-casinos.jpg"); 
+	background-position: top 250px right;
+	background-size: cover; 
+	height: 205px;
+}
+
+section.banner .box.news {
+	background: url("~assets/img/banner-news.jpg"); 
+	background-position: top 250px right;
+	background-size: cover; 
+	height: 205px;
+}
+
+section.banner .box.paypal {
+	background: url("~assets/img/paypalbanner.jpg"); 
+	background-position: top 360px right;
+	background-size: cover; 
+	height: 205px;
+}
+section.banner .box.spielsucht {
+	background: url("~assets/img/banner-spielsucht.jpg"); 
+	background-position: top right;
+	background-size: cover; 
+	height: 445px;
+}
+
+section.banner.mrgreen .box {
+	background: url("~assets/img/casinos/mrgreen/mrgreen_banner.jpg"); 
+	background-position: top -20px right;
+	background-size: cover; 
+	height: 300px;
+}
+
+section.banner.news .box {
+	background: url("~assets/img/banner-news.jpg"); 
+	background-position: top -20px right;
+	background-size: cover; 
+	height: 120px;
+}
+
+section.banner.casinocruise .box {
+	background: url("~assets/img/casinos/casinocruise/casinocruise_banner.jpg"); 
+	background-position: top -20px right;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.nova21 .box {
+	background: url("~assets/img/casinos/21nova/21nova_banner.jpg"); 
+	background-position: top -30px center;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.casino888 .box {
+	background: url("~assets/img/casinos/888casino/888casino_banner.jpg"); 
+	background-position: top -20px right;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.leovegas .box {
+	background: url("~assets/img/casinos/leovegas/leovegas_banner.jpg"); 
+	background-position: top center;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.prestigecasino .box {
+	background: url("~assets/img/casinos/prestigecasino/prestigecasino_banner.jpg"); 
+	background-position: top center;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.rubyfortune .box {
+	background: url("~assets/img/casinos/rubyfortune/rubyfortune_banner.jpg"); 
+	background-position: top center;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.stargames .box {
+	background: url("~assets/img/casinos/stargames/stargames_banner.jpg"); 
+	background-position: top center;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.spinpalace .box {
+	background: url("~assets/img/casinos/spinpalace/spinpalace_banner.jpg"); 
+	background-position: top -20px center;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.bwin .box {
+	background: url("~assets/img/casinos/bwin/bwin_banner.jpg"); 
+	background-position: top center;
+	background-size: cover; 
+	height: 300px;
+}
+section.banner.sunmaker .box {
+	background: url("~assets/img/casinos/sunmaker/sunmaker_banner.jpg"); 
+	background-position: center center;
+	background-size: cover; 
+	height: 300px;
+}
+
+section.banner.williamhill .box {
+	background: url("~assets/img/casinos/williamhill/williamhill_banner.jpg"); 
+	background-position: top -20px right;
+	background-size: cover; 
+	height: 300px;
+}
+
+section.banner.partycasino .box {
+	background: url("~assets/img/casinos/partycasino/partycasino_banner.jpg"); 
+	background-position: center center;
+	background-size: cover; 
+	height: 280px;
+}
+section.banner.casinofantasia .box {
+	background: url("~assets/img/casinos/casinofantasia/casinofantasia_banner.jpg"); 
+	background-position: top -20px right;
+	background-size: cover; 
+	height: 320px;
+}
+section.banner.quasar-gaming .box {
+	background: url("~assets/img/casinos/quasar-gaming/quasar-gaming_banner.jpg"); 
+	background-position: top -20px right;
+	background-size: cover; 
+	height: 320px;
+}
+section.banner.rivo-casino .box {
+	background: url("~assets/img/casinos/rivo-casino/rivo-casino_banner.jpg"); 
+	background-position: top -41px right;
+	background-size: cover; 
+	height: 340px;
+}
+
+section.intro li {
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+}
+
+section.highlights {
+	background: rgba(10,10,10,0.10);
+	padding: 25px 0 20px 0;
+	margin-bottom: 20px;
+	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+	   -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+	        box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+section.highlights .box.casino-vergleich {
+	background: url("~assets/img/highlights-box-casino-vergleich.jpg") right bottom no-repeat #fff;
+}
+section.highlights .box.online-slots {
+	background: url("~assets/img/highlights-box-slots.jpg") right bottom no-repeat #fff;
+}
+section.highlights .box.live-dealer {
+	background: url("~assets/img/highlights-box-live-dealer.jpg") right bottom no-repeat #fff;
+}
+section.highlights .box.bonus {
+	background: url("~assets/img/highlights-box-bonus.jpg") right bottom no-repeat #fff;
+}
+section.highlights .box.spieleangebot {
+	background: url("~assets/img/highlights-box-spieleangebot.jpg") right bottom no-repeat #fff;
+}
+section.highlights .box.payments {
+	background: url("~assets/img/highlights-box-payments.jpg") right bottom no-repeat #fff;
+}
+
+
+
+section.highlights span.title5 a {
+	color: #fff;
+}
+section.highlights span.title5 a:hover,
+section.highlights span.title5 a:active {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+section.highlights h1,
+section.highlights span.title1 {
+	margin: 10px 0 10px 0;
+	padding-left: 15px;
+}
+section.highlights h2 {
+	padding: 15px 15px 0 15px;
+}
+section.highlights.dark {
+	background: rgba(0,0,0,0.6)
+}
+section.highlights p {
+	/** font-weight: bold; **/
+	/** text-transform: uppercase; **/
+	padding: 5px 15px 0px 15px;
+	line-height: 155%;
+	font-size: 16.5px;
+}
+
+section.highlights ul a {
+	border-bottom: 1px solid #00B000;
+}
+
+section.highlights ul a:hover,
+section.highlights ul a:focus,
+section.highlights ul a:active {
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+
+section.highlights ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 15px 15px 15px;
+}
+aside ul {
+	list-style: none!important;
+	margin: 0;
+	padding: 0 15px 10px 15px;
+}
+
+section.highlights li {
+	padding-bottom: 10px;
+}
+aside li span,
+section.highlights li span {
+	margin-right: 5px;
+}
+
+section.highlights li:last-child {
+	padding-bottom: 8px;
+}
+
+
+
+section.highlights .box .nolink:hover,
+section.highlights .box .nolink:active {
+	text-decoration: none;
+}
+
+
+
+
+section.highlights .slot {
+	margin-bottom: 25px;
+}
+
+section.highlights .slot.sixteentonine {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+
+section.highlights .slot.sixteentoten {
+	position: relative;
+	padding-bottom: 62.5%; /* 16:10 */
+	height: 0;
+}
+
+section.highlights .slot.fourtothree {
+	position: relative;
+	padding-bottom: 75.47%; /* 4:3 */
+	height: 0;
+}
+
+section.highlights .slot iframe {
+	border: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background: #222;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+
+
+section.highlights .slots {
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+	 -khtml-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+	background: #fff;
+	background: -webkit-linear-gradient(top,        #555555 0%, #444444 100%);
+	background:    -moz-linear-gradient(top,        #555555 0%, #444444 100%);
+	background:      -o-linear-gradient(top,        #555555 0%, #444444 100%);
+	background:     -ms-linear-gradient(top,        #555555 0%, #444444 100%);
+	background:         linear-gradient(top bottom, #555555 0%, #444444 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#444444',GradientType=0 );
+	padding: 15px;
+	text-align: center;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.77);
+	   -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.77);
+	        box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.77);
+	margin-bottom: 25px;
+
+
+}
+
+section.highlights .slots:hover,
+section.highlights .slots:active {
+	background: #fff;
+	background: -webkit-linear-gradient(top,        #444444 0%, #333333 100%);
+	background:    -moz-linear-gradient(top,        #444444 0%, #333333 100%);
+	background:      -o-linear-gradient(top,        #444444 0%, #333333 100%);
+	background:     -ms-linear-gradient(top,        #444444 0%, #333333 100%);
+	background:         linear-gradient(top bottom, #444444 0%, #333333 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#333333',GradientType=0 );
+	-webkit-box-shadow: 0px 0px 3px 1px #00ff00;
+	   -moz-box-shadow: 0px 0px 3px 1px #00ff00;
+	        box-shadow: 0px 0px 3px 1px #00ff00;
+
+}
+
+section.highlights .slots img {
+	width: 100%;
+	height: auto;
+}
+
+section.highlights .slots.bonus img {
+	max-width: 200px!important;
+	height: auto;
+}
+
+section.highlights .slot .ribbon-wrapper {
+	width: 100%;
+	max-width: 300px;
+	height: 68px;
+	overflow: hidden;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+
+section.highlights .slots a {
+	color: #777;
+}
+section.highlights .slots a:hover {
+	color: #575757;
+	text-decoration: none;
+}
+
+
+section.highlights .slot a.ribbon {
+	font-size: 22px;
+	display: block;
+	text-align: center;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+	font-family: "Oswald";
+	text-transform: uppercase;
+	color: #222;
+	background: -webkit-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:    -moz-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:      -o-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:     -ms-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:         linear-gradient(top bottom, #FACF0D 0%, #E1AA24 100%);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	-webkit-border-radius: 5px 0 0 5px;
+	   -moz-border-radius: 5px 0 0 5px;
+	        border-radius: 5px 0 0 5px;
+	position: relative;
+	padding: 11px 0;
+	top: 15px;
+}
+section.highlights .slots .ribbon-wrapper {
+	width: 100%;
+	max-width: 220px;
+	height: 68px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+section.highlights .slots a.ribbon {
+	font-size: 15px;
+	display: block;
+	text-align: center;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+	font-family: "Oswald";
+	text-transform: uppercase;
+	color: #222;
+	background: -webkit-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:    -moz-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:      -o-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:     -ms-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:         linear-gradient(top bottom, #FACF0D 0%, #E1AA24 100%);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	-webkit-border-radius: 5px 0 0 5px;
+	   -moz-border-radius: 5px 0 0 5px;
+	        border-radius: 5px 0 0 5px;
+	position: relative;
+	padding: 6px 0;
+	top: 15px;
+}
+
+
+section.highlights .slots hr {
+	border-color: #666;
+}
+section.highlights.dark h3,
+section.highlights.dark .slots .title3 a {
+	color: #ccc;
+}
+section.highlights h3 {
+	margin-bottom: 25px;
+}
+section.content {
+	margin: 0;
+}
+
+section.content .container {
+	padding: 0;
+}
+
+section.content img.screenshot {
+	width: 90%;
+	margin: 20px 0;
+	max-width: 710px;
+	height: auto;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+section.content .box.image {
+	padding: 15px 15px 0 15px;
+	margin-top: 20px;
+	position: relative;
+	z-index: 90;
+}
+
+section.content .box.image img {
+	width: 100%;
+}
+
+section.content .box.image p {
+	text-align: center;
+	font-size: 12.5px;
+	font-style: italic;
+	margin: 5px 0 0 0;
+}
+
+
+section.content .box.image .ribbon-wrapper {
+	width: 100%;
+	max-width: 375px;
+	height: 88px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 20px;
+	right: -8px;
+}
+
+section.content .box.image a.ribbon {
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.2);
+	font-family: "Oswald";
+	text-transform: uppercase;
+	color: #222;
+	background: -webkit-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:    -moz-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:      -o-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:     -ms-linear-gradient(top,        #FACF0D 0%, #E1AA24 100%);
+	background:         linear-gradient(top bottom, #FACF0D 0%, #E1AA24 100%);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	-webkit-border-radius: 5px 0 0 5px;
+	   -moz-border-radius: 5px 0 0 5px;
+	        border-radius: 5px 0 0 5px;
+	position: relative;
+	padding: 11px 0;
+	top: 15px;
+}
+
+section.content .box.image a.ribbon:hover,
+section.content .box.image a.ribbon:active {
+	text-decoration: none;
+	color: #222;
+	background: -webkit-linear-gradient(top,        #FFE326 0%, #F7C13C 100%);
+	background:    -moz-linear-gradient(top,        #FFE326 0%, #F7C13C 100%);
+	background:      -o-linear-gradient(top,        #FFE326 0%, #F7C13C 100%);
+	background:     -ms-linear-gradient(top,        #FFE326 0%, #F7C13C 100%);
+	background:         linear-gradient(top bottom, #FFE326 0%, #F7C13C 100%);
+}
+
+section.content .box.image a.ribbon:after {
+	content: "";
+	height: 0;
+	width: 0;
+	display: block;
+	position: absolute;
+	bottom: -6px;
+	right: 0;
+	border-top: 6px solid #8A6D21;
+	border-right: 8px solid transparent;
+}
+
+section.content h1,
+section.content h2,
+section.content span.title1,
+section.content span.title2 {
+	margin-bottom: 15px;
+}
+
+section.content ul {
+	margin: 15px 0 30px 0;
+	list-style-type: circle;
+}
+
+section.content ul li {
+	margin-bottom: 10px;
+}
+
+section.content .box p {
+	padding: 5px 15px 10px 15px;
+	line-height: 160%;
+}
+
+section.content .box.fazit {
+	background: #eee;
+	margin: 30px 0 0 0;
+}
+
+section.content .box.fazit h5,
+section.content .box.fazit span.title5 {
+	text-align: left;
+	padding: 20px 0 0 10px;
+	margin-bottom: 0;
+	color: #575757;
+	background: transparent;
+} 
+
+section.content .box.payments img {
+	padding: 40px 20px 10px 20px;
+}
+
+
+section.content button.faq {
+	display: block;
+	border: transparent;
+	background: transparent;
+	font-family: "Oswald";
+	text-transform: uppercase;
+	font-size: 26px;
+	line-height: 100%;
+	padding: 10px;
+}
+section.content button.faq:hover,
+section.content button.faq:focus,
+section.content button.faq:active {
+	outline: none;
+	color: #888;
+}
+
+section.content p,
+section.content ul li {
+	font-size: 16.5px;
+	line-height: 155%;
+}
+
+section.content p {
+	margin-bottom: 20px;
+}
+
+section.content p a {
+	border-bottom: 1px solid #666;
+}
+section.content p a:hover,
+section.content p a:active {
+	text-decoration: none;
+	color: #888;
+	border-bottom: 1px solid #00B000;
+}
+
+section.content .recommendation a {
+	border: none!important;
+}
+
+section.content aside p {
+	font-size: 15px;
+	line-height: 150%;
+	margin-bottom: 0px;
+}
+section.content aside ul.karten-check {
+	margin-bottom: 0;
+	
+}
+section.content aside ul.karten-check li {
+	font-size: 13px;
+
+}
+
+ul.payments,
+ul.certificates,
+ul.casinos {
+	text-align: center;
+	margin-left: 0;
+}
+ul.payments li,
+ul.certificates li {
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	text-indent: -9999px;
+}
+
+ul.payments li.creditcard {
+	background: url("~assets/img/payments.png") no-repeat 0 0;
+}
+ul.payments li.debitcard {
+	background: url("~assets/img/payments.png") no-repeat -90px 0;
+}
+ul.payments li.intercash {
+	background: url("~assets/img/payments.png") no-repeat 0 -30px;
+}
+ul.payments li.entropay {
+	background: url("~assets/img/payments.png") no-repeat -90px -30px;
+}
+ul.payments li.eps {
+	background: url("~assets/img/payments.png") no-repeat 0 -60px;
+}
+ul.payments li.neteller {
+	background: url("~assets/img/payments.png") no-repeat -90px -60px;
+}
+ul.payments li.paypal {
+	background: url("~assets/img/payments.png") no-repeat 0px -90px;
+}
+ul.payments li.euteller {
+	background: url("~assets/img/payments.png") no-repeat -90px -90px;
+}
+ul.payments li.eco {
+	background: url("~assets/img/payments.png") no-repeat 0px -120px;
+}
+ul.payments li.skrill {
+	background: url("~assets/img/payments.png") no-repeat -90px -120px;
+}
+ul.payments li.banktransfer {
+	background: url("~assets/img/payments.png") no-repeat 0px -150px;
+}
+ul.payments li.clickandbuy {
+	background: url("~assets/img/payments.png") no-repeat -90px -150px;
+}
+ul.payments li.giropay {
+	background: url("~assets/img/payments.png") no-repeat 0px -180px;
+}
+ul.payments li.ideal {
+	background: url("~assets/img/payments.png") no-repeat -90px -180px;
+}
+ul.payments li.nordea {
+	background: url("~assets/img/payments.png") no-repeat 0px -210px;
+}
+ul.payments li.lobanet {
+	background: url("~assets/img/payments.png") no-repeat -90px -210px;
+}
+ul.payments li.paysafecard {
+	background: url("~assets/img/payments.png") no-repeat 0px -240px;
+}
+ul.payments li.ukash {
+	background: url("~assets/img/payments.png") no-repeat -90px -240px;
+}
+ul.payments li.citadel {
+	background: url("~assets/img/payments.png") no-repeat 0px -270px;
+}
+ul.payments li.sofort {
+	background: url("~assets/img/payments.png") no-repeat -90px -270px;
+}
+
+
+
+
+
+ul.certificates li {
+	background: url("~assets/img/certificates.png") no-repeat 0 0;
+}
+ul.certificates li.comodo {
+	background: url("~assets/img/payments.png") no-repeat 0 0;
+}
+
+
+
+ul.casinos {
+	text-align: center;
+	margin-left: 0;
+	margin: 0;
+	padding: 0;
+}
+ul.casinos li {
+	display: inline-block;
+	width: 125px;
+	height: 50px;
+	margin: 5px;
+	text-indent: -9999px;
+}
+ul.casinos li.nova21 {
+	background: url("~assets/img/casinos.png") no-repeat 0 0;
+}
+ul.casinos li.casino888 {
+	background: url("~assets/img/casinos.png") no-repeat -125px 0;
+}
+ul.casinos li.bwin {
+	background: url("~assets/img/casinos.png") no-repeat 0 -50px;
+}
+ul.casinos li.eurogrand {
+	background: url("~assets/img/casinos.png") no-repeat -125px -50px;
+}
+ul.casinos li.joyland {
+	background: url("~assets/img/casinos.png") no-repeat 0 -100px;
+}
+ul.casinos li.kingplayer {
+	background: url("~assets/img/casinos.png") no-repeat -125px -100px;
+}
+ul.casinos li.partycasino {
+	background: url("~assets/img/casinos.png") no-repeat 0 -150px;
+}
+ul.casinos li.prestigecasino {
+	background: url("~assets/img/casinos.png") no-repeat -125px -150px;
+}
+ul.casinos li.rubyfortune {
+	background: url("~assets/img/casinos.png") no-repeat 0 -200px;
+}
+ul.casinos li.spinpalace {
+	background: url("~assets/img/casinos.png") no-repeat -125px -200px;
+}
+ul.casinos li.stargames {
+	background: url("~assets/img/casinos.png") no-repeat 0 -250px;
+}
+ul.casinos li.williamhill {
+	background: url("~assets/img/casinos.png") no-repeat -125px -250px;
+}
+ul.casinos li.mrgreen {
+	background: url("~assets/img/casinos.png") no-repeat 0 -300px;
+}
+ul.casinos li.cherrycasino {
+	background: url("~assets/img/casinos.png") no-repeat -125px -300px;
+}
+ul.casinos li.jackpotcity {
+	background: url("~assets/img/casinos.png") no-repeat 0 -350px;
+}
+ul.casinos li.winnercasino {
+	background: url("~assets/img/casinos.png") no-repeat -125px -350px;
+}
+ul.casinos li.casinocruise {
+	background: url("~assets/img/casinos.png") no-repeat 0 -400px;
+}
+ul.casinos li.leovegas {
+	background: url("~assets/img/casinos.png") no-repeat -125px -400px;
+}
+ul.casinos li.betsafe {
+	background: url("~assets/img/casinos.png") no-repeat 0 -450px;
+}
+ul.casinos li.betsson {
+	background: url("~assets/img/casinos.png") no-repeat -125px -450px;
+}
+ul.casinos li.sunmaker {
+	background: url("~assets/img/casinos.png") no-repeat 0 -500px;
+}
+ul.casinos li.sunnyplayer {
+	background: url("~assets/img/casinos.png") no-repeat -125px -500px;
+}
+ul.casinos li.cabaretclubcasino {
+	background: url("~assets/img/casinos.png") no-repeat 0 -550px;
+}
+ul.casinos li.casinoclub {
+	background: url("~assets/img/casinos.png") no-repeat -125px -550px;
+}
+ul.casinos li.eurocasino {
+	background: url("~assets/img/casinos.png") no-repeat 0 -600px;
+}
+ul.casinos li.swisscasino {
+	background: url("~assets/img/casinos.png") no-repeat -125px -600px;
+}
+ul.casinos li.intercasino {
+	background: url("~assets/img/casinos.png") no-repeat 0 -650px;
+}
+ul.casinos li.williamhillvegas {
+	background: url("~assets/img/casinos.png") no-repeat -125px -650px;
+}
+ul.casinos li.casino770 {
+	background: url("~assets/img/casinos.png") no-repeat 0 -700px;
+}
+
+ul.casinos li.casinofantasia {
+	background: url("~assets/img/casinos.png") no-repeat -125px -700px;
+}
+
+section.content.faq hr {
+	margin: 30px 0;
+}
+
+section.content .box.casino h4,
+section.content .box.casino span.title4 {
+	color: #008000;
+	font-size: 25px;
+	border-bottom: 1px solid #eee;
+	padding: 5px 0 15px 0;
+	margin: 0;
+	background: -webkit-linear-gradient(#00B000, #008000);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+section.content .box.casino {
+	margin-top: 15px;
+	min-height: 330px;
+}
+
+section.content .box.casino ul {
+	list-style: none;
+	margin: 20px 0 0 0;
+}
+section.content .box.casino ul li span {
+	margin-right: 5px;
+}
+
+
+
+
+
+section.content img.content {
+	max-width: 360px; 
+	height: auto; 
+	margin: 10px 20px 10px 0; 
+	padding: 10px;
+	background: #fff;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+	        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
+
+section.content img.content.left {
+	float: left;
+	margin: 10px 20px 10px 0; 
+}
+
+section.content img.content.right {
+	float: right;
+	margin: 10px 0 10px 20px; 
+}
+
+section.content img.content.gamerules {
+	width: 100%;
+	max-width: 100%;
+	height: auto; 
+	margin: 0 0 20px 0px; 
+}
+
+section.content .box.casino {
+	padding: 10px 15px 15px 15px;
+	width: 100%; 
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
+}
+
+section.content .box.casino.mrgreen {
+	background: url("~assets/img/casinos/mrgreen/mrgreen_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.mrgreen:hover {
+	background: url("~assets/img/casinos/mrgreen/mrgreen_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.casinocruise {
+	background: url("~assets/img/casinos/casinocruise/casinocruise_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.casinocruise:hover {
+	background: url("~assets/img/casinos/casinocruise/casinocruise_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.bwin {
+	background: url("~assets/img/casinos/bwin/bwin_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.bwin:hover {
+	background: url("~assets/img/casinos/bwin/bwin_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.stargames {
+	background: url("~assets/img/casinos/stargames/stargames_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.stargames:hover {
+	background: url("~assets/img/casinos/stargames/stargames_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.leovegas {
+	background: url("~assets/img/casinos/leovegas/leovegas_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.leovegas:hover {
+	background: url("~assets/img/casinos/leovegas/leovegas_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.nova21 {
+	background: url("~assets/img/casinos/21nova/21nova_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.nova21:hover {
+	background: url("~assets/img/casinos/21nova/21nova_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.casino888 {
+	background: url("~assets/img/casinos/888casino/888casino_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.casino888:hover {
+	background: url("~assets/img/casinos/888casino/888casino_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.betsafe {
+	background: url("~assets/img/casinos/betsafe/betsafe_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.betsafe:hover {
+	background: url("~assets/img/casinos/betsafe/betsafe_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.betsson {
+	background: url("~assets/img/casinos/betsson/betsson_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.betsson:hover {
+	background: url("~assets/img/casinos/betsson/betsson_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.cherrycasino {
+	background: url("~assets/img/casinos/cherrycasino/cherrycasino_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.cherrycasino:hover {
+	background: url("~assets/img/casinos/cherrycasino/cherrycasino_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.williamhill {
+	background: url("~assets/img/casinos/williamhill/williamhill_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.williamhill:hover {
+	background: url("~assets/img/casinos/williamhill/williamhill_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.partycasino {
+	background: url("~assets/img/casinos/partycasino/partycasino_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.partycasino:hover {
+	background: url("~assets/img/casinos/partycasino/partycasino_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.prestigecasino {
+	background: url("~assets/img/casinos/prestigecasino/prestigecasino_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.prestigecasino:hover {
+	background: url("~assets/img/casinos/prestigecasino/prestigecasino_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.spinpalace {
+	background: url("~assets/img/casinos/spinpalace/spinpalace_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.spinpalace:hover {
+	background: url("~assets/img/casinos/spinpalace/spinpalace_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.eurogrand {
+	background: url("~assets/img/casinos/eurogrand/eurogrand_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.eurogrand:hover {
+	background: url("~assets/img/casinos/eurogrand/eurogrand_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.rubyfortune {
+	background: url("~assets/img/casinos/rubyfortune/rubyfortune_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.rubyfortune:hover {
+	background: url("~assets/img/casinos/rubyfortune/rubyfortune_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.casinoclub {
+	background: url("~assets/img/casinos/casinoclub/casinoclub_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.casinoclub:hover {
+	background: url("~assets/img/casinos/casinoclub/casinoclub_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.kingplayer {
+	background: url("~assets/img/casinos/kingplayer/kingplayer_casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.kingplayer:hover {
+	background: url("~assets/img/casinos/kingplayer/kingplayer_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.joyland {
+	background: url("~assets/img/casinos/joyland/joyland_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.joyland:hover {
+	background: url("~assets/img/casinos/joyland/joyland_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.sunmaker {
+	background: url("~assets/img/casinos/sunmaker/sunmaker_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.sunmaker:hover {
+	background: url("~assets/img/casinos/sunmaker/sunmaker_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.casino770 {
+	background: url("~assets/img/casinos/casino770/casino770_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.casino770:hover {
+	background: url("~assets/img/casinos/casino770/casino770_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.intercasino {
+	background: url("~assets/img/casinos/intercasino/intercasino_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.intercasino:hover {
+	background: url("~assets/img/casinos/intercasino/intercasino_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.williamhillvegas {
+	background: url("~assets/img/casinos/williamhillvegas/williamhillvegas_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.williamhillvegas:hover {
+	background: url("~assets/img/casinos/williamhillvegas/williamhillvegas_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.cabaretclub {
+	background: url("~assets/img/casinos/cabaretclub/cabaretclub_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.cabaretclub:hover {
+	background: url("~assets/img/casinos/cabaretclub/cabaretclub_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.sunnyplayer {
+	background: url("~assets/img/casinos/sunnyplayer/sunnyplayer_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.sunnyplayer:hover {
+	background: url("~assets/img/casinos/sunnyplayer/sunnyplayer_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.jackpotcity {
+	background: url("~assets/img/casinos/jackpotcity/jackpotcity_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.jackpotcity:hover {
+	background: url("~assets/img/casinos/jackpotcity/jackpotcity_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.swisscasino {
+	background: url("~assets/img/casinos/swisscasino/swisscasino_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.swisscasino:hover {
+	background: url("~assets/img/casinos/swisscasino/swisscasino_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.winnercasino {
+	background: url("~assets/img/casinos/winnercasino/winnercasino_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.winnercasino:hover {
+	background: url("~assets/img/casinos/winnercasino/winnercasino_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.casinoeuro {
+	background: url("~assets/img/casinos/casinoeuro/casinoeuro_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.casinoeuro:hover {
+	background: url("~assets/img/casinos/casinoeuro/casinoeuro_casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.casinofantasia {
+	background: url("~assets/img/casinos/casinofantasia/casinofantasia_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.casinofantasia:hover {
+	background: url("~assets/img/casinos/casinofantasia/casinofantasia_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.quasar-gaming {
+	background: url("~assets/img/casinos/quasar-gaming/quasar-gaming_casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.quasar-gaming:hover {
+	background: url("~assets/img/casinos/quasar-gaming/quasar-gaming_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.rivo-casino {
+	background: url("~assets/img/casinos/rivo-casino/rivo-casino.jpg") left top #fff no-repeat;	
+}
+section.content .box.casino.rivo-casino:hover {
+	background: url("~assets/img/casinos/rivo-casino/rivo-casino_highlight.jpg") left top #fff no-repeat
+}
+section.content .box.casino.hohensyburg {
+	background: url("~assets/img/casinos/hohensyburg/hohensyburg-casino.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.garmisch {
+	background: url("~assets/img/casinos/garmisch/spielbank-garmisch-high.jpg") left top #fff no-repeat;
+}
+section.content .box.casino.petersbogen {
+	background: url("~assets/img/casinos/petersbogen/casino-petersbogen-high.jpg") left top #fff no-repeat;
+}
+section.content .box.casino .stars {
+	text-align: right;
+}
+
+section.content .box.casino h6,
+section.content .box.casino span.title6 {
+	font-size: 15px;
+	text-align: right;
+}
+
+section.content .box.casino p.center {
+	margin: 10px 0 0 0;
+}
+
+section.content .box.casino.bonus {
+
+}
+
+section.content .box.casino.bonus p.center {
+	margin: 20px 0 0 0;
+}
+
+
+
+section.content .box.payments {
+	margin-top: 30px;
+}
+
+section.content .box.payments h3,
+section.content .box.payments span.title3 {
+	text-align: center;
+}
+
+
+
+
+
+aside .box {
+	margin: 0 0 30px 0;
+}
+
+aside .box:first-child {
+	margin-top: 75px;
+}
+
+aside p.right {
+	margin: 25px 0;
+}
+
+aside .box.bonus {
+	background: #fad766;
+	background: -webkit-linear-gradient(top,        #fad766 0%, #d4af37 100%);
+	background:    -moz-linear-gradient(top,        #fad766 0%, #d4af37 100%);
+	background:      -o-linear-gradient(top,        #fad766 0%, #d4af37 100%);
+	background:     -ms-linear-gradient(top,        #fad766 0%, #d4af37 100%);
+	background:         linear-gradient(top bottom, #fad766 0%, #d4af37 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fad766', endColorstr='#d4af37',GradientType=0 );
+}
+
+aside .btn-bcc.bonus {
+	text-align: center;
+	width: 100%;
+	margin: 70px 0 10px 0;
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+aside .box.bonus .btn-bcc {
+	margin: 25px 0;
+}
+
+aside .box.recommendation ul {
+	margin: 0 0 0 40px;
+}
+
+aside .box.recommendation hr {
+	margin: 0;
+}
+
+aside h6,
+aside span.title6 {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	color: #00B000;
+	font-size: 17px;
+	line-height: 150%;
+	font-style: italic;
+	padding: 20px 20px;
+	text-align: center;
+}
+
+footer {
+	background: #f7f7f7;
+	color: #777;
+	margin-top: 20px;
+	padding: 25px 0 20px 0;
+	-webkit-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+	   -moz-box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+	        box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+footer p {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+footer p.copy {
+	text-align: center;
+	
+}
+
+footer span {
+	font-family: "Oswald";
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+	vertical-align: -1px;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+#return-to-top {
+	position: fixed;
+	z-index: 99;
+	bottom: 20px;
+	right: 20px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+	   -moz-border-radius: 35px;
+	        border-radius: 35px;
+	display: none;
+	-webkit-transition: all 0.3s linear;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+}
+#return-to-top i {
+	color: #fff;
+	margin: 0;
+	position: relative;
+	left: 16px;
+	top: 13px;
+	font-size: 19px;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+}
+#return-to-top:hover {
+	background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+	color: #fff;
+	top: 5px;
+}
+
+ul#controls {
+	padding: 0;
+}
+
+ul#controls li {
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+}
+
+ul#controls li > a,
+ul#controls li > span {
+	margin-left: 10px;
+	padding: 5px;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+} 
+
+ul#controls li.active > a {
+	color: #fff;
+	background: #00B000;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+}
+
+
+.stars {
+	font-size: 22px;
+	color: #ccc;
+}
+
+.rating .stars {
+	font-size: 43px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.stars .gold {
+	color: #FFD700;
+	background: -webkit-linear-gradient(#FFD700, #DAA520);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+.stars .half {
+	background: linear-gradient(to right,  #FFD700 0%, #FFD700 45%, #eee 45%,#eee 100%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.rating .bcc-spot {
+	text-align: center;
+	color: #999;
+	font-size: 22px;
+}
+
+
+section.intro ul {
+	position: absolute;
+	top: 80px;
+}
+section.intro h2,
+section.intro span.title2 {
+	position: absolute;
+	bottom: 40px;
+	right: 15px;
+}
+
+
+footer ul.sitemap {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+footer ul.sitemap li {
+	display: inline;
+}
+footer ul.sitemap li+li:before {
+  content: "|";
+  padding: 0 25px;
+  font-weight: normal;
+}
+
+footer ul.sitemap-links {
+	list-style: none;
+	font-size: 12px;
+}
+
+
+footer ul.sitemap-links strong {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #575757;
+}
+
+
+@media (pointer:coarse) {
+	.hideonmobile {
+		display: none!important;
+	}
+}
+
+
+
+
+
+img.casinolink {
+	width: 100%;
+	height: 100%;
+	max-height: 200px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 996px) {
+	section.intro ul {
+		position: relative;
+		top: 40px;
+		background: rgba(0,0,0,0.7);
+	}
+	section.intro li {
+		position: relative;
+		padding: 5px 0;
+	}
+	section.intro h2,
+	section.intro span.title2 {
+		position: relative;
+		top: 30px;
+		right: 0;
+	}
+	section
+	ul.nav > li {
+		margin: 10px 5px 10px 0px;
+		font-size: 13.5px;
+	}
+
+	section.banner .box {
+	background: url("~assets/img/teaser-v3.jpg"); 
+	background-position: top 0 right;
+	background-size: cover; 
+	}
+
+	.stars {font-size: 14px;}
+
+	.box.casino ul { padding-left: 0;}
+
+	.box.casino li { font-size: 12px;}
+
+	section.content .box.casino p.center {padding-left: 0;}
+
+	a.btn-bcc.small {font-size: 12px;}
+
+	a.btn-bcc {padding: 4px 15px; white-space: normal;}
+
+	a.btn-bcc.mob {font-size: 13px;}
+
+
+	section.content img.content { }
+
+	section.content img.content.left {float: none; margin: 10px 20px 10px 0;}
+
+	section.content img.content.right {float: none; margin: 10px 0 10px 20px;}
+
+}
+
+@media only screen and (max-width : 768px) {
+	.box.casino .col-lg-7 {
+		width: 100%;
+	}
+
+	section.content img.content {
+	max-width: 200px; }
+}	
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	section.intro li h3,
+	section.intro li span.title3 {
+		font-size: 20px!important;
+	}
+	section.intro h2,
+	section.intro span.title2 {
+		top: 50px;
+		font-size: 27px;
+	}
+	.logo {
+		max-width: 300px;
+		height: 40px;
+		background-size: 300px 40px;
+	}
+	section.content a.ribbon {
+		font-size: 16px;
+	}
+
+	a.btn-bcc.bonus {font-size: 25px;}
+}
+
+
+
+
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/*!
+ * @copyright &copy; Kartik Visweswaran, Krajee.com, 2013 - 2015
+ * @version 3.5.3
+ *
+ * A simple yet powerful JQuery star rating plugin that allows rendering
+ * fractional star ratings and supports Right to Left (RTL) input.
+ *
+ * For more JQuery/Bootstrap plugins and demos visit http://plugins.krajee.com
+ * For more Yii related demos visit http://demos.krajee.com
+ */.rating-loading{width:25px;height:25px;font-size:0;color:#fff;background:transparent url("~assets/img/loading.gif") top left no-repeat;border:none}.rating-fa{font-family:FontAwesome;padding-left:1px}.rating-fa .rating-stars:before{padding-left:1px}.rating-gly{font-family:'Glyphicons Halflings'}.rating-gly-star{font-family:'Glyphicons Halflings';padding-left:2px}.rating-gly-star .rating-stars:before{padding-left:2px}.rating-lg .rating-gly-star,.rating-lg .rating-gly-star .rating-stars:before{padding-left:4px}.rating-xl .rating-gly-star,.rating-xl .rating-gly-star .rating-stars:before{padding-left:2px}.rating-active{cursor:default}.rating-disabled{cursor:not-allowed}.rating-uni{font-size:1.2em;margin-top:-5px}.rating-container{position:relative;vertical-align:middle;display:inline-block;color:#e3e3e3;overflow:hidden}.rating-container:before{content:attr(data-content)}.rating-container .rating-stars{position:absolute;left:0;top:0;white-space:nowrap;overflow:hidden;color:#fde16d;transition:all .25s ease-out;-o-transition:all .25s ease-out;-moz-transition:all .25s ease-out;-webkit-transition:all .25s ease-out}.rating-container .rating-stars:before{content:attr(data-content);text-shadow:0 0 1px rgba(0,0,0,.7)}.rating-container-rtl{position:relative;vertical-align:middle;display:inline-block;overflow:hidden;color:#fde16d}.rating-container-rtl:before{content:attr(data-content);text-shadow:0 0 1px rgba(0,0,0,.7)}.rating-container-rtl .rating-stars{position:absolute;left:0;top:0;white-space:nowrap;overflow:hidden;color:#e3e3e3;transition:all .25s ease-out;-o-transition:all .25s ease-out;-moz-transition:all .25s ease-out;-webkit-transition:all .25s ease-out}.rating-container-rtl .rating-stars:before{content:attr(data-content)}.rating-xl{font-size:4.89em}.rating-lg{font-size:3.91em}.rating-md{font-size:3.13em}.rating-sm{font-size:2.5em}.rating-xs{font-size:2em}.star-rating .clear-rating,.star-rating-rtl .clear-rating{color:#aaa;cursor:not-allowed;display:inline-block;vertical-align:middle;font-size:60%}.clear-rating-active{cursor:pointer!important}.clear-rating-active:hover{color:#843534}.star-rating .clear-rating{padding-right:5px}.star-rating .caption,.star-rating-rtl .caption{color:#999;display:inline-block;vertical-align:middle;font-size:55%}.star-rating .caption{padding-left:5px}.star-rating-rtl .caption{padding-right:5px}
