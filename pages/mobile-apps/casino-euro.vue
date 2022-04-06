@@ -1,5 +1,6 @@
 <template>
-	<div>		<section class="banner">
+	<div>
+		<section class="banner">
 
 			<div class="container">
 				<div class="row">
