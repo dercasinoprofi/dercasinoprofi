@@ -416,34 +416,19 @@
 </template>
 <script>
 export default {
-  name: "mobile888poker",
+  name: "mobile888betson",
   head() {
     return {
-      title: "888 Poker Mobile App im Test | CasinoVergleicher.com",
+      title: "Betsson Mobile App im Test | CasinoVergleicher.com",
       meta: [
         {
           hid: "description",
           name: "description",
           content:
-            "888 Poker App für Android und iPhone im Qualitätstest von Casino Vergleicher. Testberichte, Screenshots und Videos. Hole deinen exklusiv Bonus im Echtgeldmodus.",
+            "Betsson App für Android und iPhone im Qualitätstest von Casino Vergleicher. Testberichte, Screenshots und Videos. Hole deinen exklusiv Bonus im Echtgeldmodus.",
         },
       ],
     };
   },
 };
 </script>
-
-<?php require '../inc/header_open.php' ?>
-
-		<title>Betsson Mobile App im Test | CasinoVergleicher.com</title>
-		<meta name="description" content="Betsson App für Android und iPhone im Qualitätstest von Casino Vergleicher. Testberichte, Screenshots und Videos. Hole deinen exklusiv Bonus im Echtgeldmodus.">
-
-		<link rel="canonical" href="https://www.casinovergleicher.com/mobile-apps/betsson.php" />
-
-<?php require '../inc/header_logo.php' ?>
-
-<?php require '../inc/navigation.php' ?>
-
-	
-
-<?php require '../inc/footer.php' ?>
