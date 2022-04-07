@@ -1,4 +1,4 @@
-import config, { meta } from './assets/config'
+import config from './assets/config'
 
 export default {
     // Target: https://go.nuxtjs.dev/config-target
@@ -6,14 +6,14 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: config.title,
+        title: config.meta.title,
         htmlAttrs: {
             lang: config.htmlLang
         },
         meta: [
             { charset: config.metaCharset },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' },
+            { hid: 'description', name: 'description', content: config.meta.description },
             { name: 'format-detection', content: 'telephone=no' }
         ],
         link: [

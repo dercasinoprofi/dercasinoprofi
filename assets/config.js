@@ -6,9 +6,9 @@ const config = {
     metaCharset: 'utf-8',
     meta: {
         htmlLang: "de",
-        title: "Website Title",
-        description: "Meta Description",
-        keywords: "meta keywords",
+        title: "Online Casinos und Boni Vergleicher - CasinoVergleicher.com",
+        description: "Online Casinos auf dem Prüfstand. Nur bei CasinoVergleicher.com findest du so schnell das Top Casino, welches zu dir passt. Sicher. Zuverlässig. Kostenlos.",
+        keywords: "online, casino, slots, bonus",
     },
     tags: {
         includeTags: ["sometag"],
