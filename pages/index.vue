@@ -1,8 +1,16 @@
 <template>
   <div>
-    <CardsCard />
-    <CardsGroup />
-    <CardsHorizontal />
+    <SliderHeaderSliderControls />
+
+    <CustomFeatureLinks />
+
+    <CustomTopCasinos />
+
+    <CustomStartpageText />
+
+    <!-- <CardsCard /> -->
+    <!-- <CardsGroup /> -->
+    <!-- <CardsHorizontal /> -->
   </div>
 </template>
 

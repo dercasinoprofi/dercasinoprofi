@@ -1,16 +1,14 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-custom container roundCorners">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="~/assets/images/bootstrap-logo.svg"
+            src="~/assets/images/logo/logo.png"
             alt=""
-            width="30"
-            height="24"
+            width="200"
             class="d-inline-block align-text-top"
           />
-          Bootstrap
         </a>
         <button
           class="navbar-toggler"
@@ -24,8 +22,23 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
+          <ul
+            class="navbar-nav"
+            v-for="(link, index) in config.navigationLinks"
+            :key="index"
+          >
+            <li class="nav-item text-light fw-bold">
+              <nuxt-link
+                class="nav-link active removeLink"
+                aria-current="page"
+                :to="link.url"
+                :title="link.title"
+                >{{ link.name }}</nuxt-link
+              >
+            </li>
+          </ul>
+
+          <!-- <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
@@ -55,10 +68,47 @@
                   <a class="dropdown-item" href="#">Something else here</a>
                 </li>
               </ul>
-            </li>
-          </ul>
+            </li> -->
         </div>
       </div>
     </nav>
   </div>
 </template>
+
+
+<script>
+import config from "../../assets/config";
+
+export default {
+  name: "headerlogo",
+  props: ["navigationLinks"],
+  data() {
+    return {
+      config,
+    };
+  },
+};
+</script>
+
+<style scoped>
+/* Modify the background color */
+.navbar-custom {
+  background-color: green;
+}
+
+.link-unstyled,
+.link-unstyled:link,
+.link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.removeLink {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.roundCorners {
+  border-radius: 5px;
+}
+</style>

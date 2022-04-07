@@ -1,6 +1,5 @@
 import config, { meta } from './assets/config'
 
-console.log(config)
 export default {
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',

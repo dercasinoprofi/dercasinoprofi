@@ -3,7 +3,6 @@
     "name": "index",
     "path": "/",
     "component": "/home/kempo/git/dercasinoprofi/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_84ffd66a"
+    "chunkName": "pages/index"
   }
 ]

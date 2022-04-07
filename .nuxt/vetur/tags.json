@@ -8,6 +8,15 @@
   "CardsHorizontal": {
     "description": "Auto imported from components/cards/Horizontal.vue"
   },
+  "CustomFeatureLinks": {
+    "description": "Auto imported from components/custom/FeatureLinks.vue"
+  },
+  "CustomStartpageText": {
+    "description": "Auto imported from components/custom/StartpageText.vue"
+  },
+  "CustomTopCasinos": {
+    "description": "Auto imported from components/custom/TopCasinos.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/footer/Footer.vue"
   },
@@ -16,5 +25,8 @@
   },
   "NavbarHeaderStandard": {
     "description": "Auto imported from components/navbar/HeaderStandard.vue"
+  },
+  "SliderHeaderSliderControls": {
+    "description": "Auto imported from components/slider/HeaderSliderControls.vue"
   }
 }
