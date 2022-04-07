@@ -3,13 +3,15 @@
     <div class="row pt-5">
       <div class="col-4 pt-5">
         <div class="card" style="width: 18rem">
-          <img
+          <!-- <img
             src="~/assets/images/logo/logo.png"
             class="card-img-top"
             alt="..."
-          />
+          /> -->
+          <div class="card-header cardTitle fw-bold text-light text-center">
+            Casino Vergleich
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Casino Vergleich</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -28,13 +30,15 @@
       </div>
       <div class="col-4 pt-5">
         <div class="card" style="width: 18rem">
-          <img
+          <!-- <img
             src="~/assets/images/logo/logo.png"
             class="card-img-top"
             alt="..."
-          />
+          /> -->
+          <div class="card-header cardTitle fw-bold text-light text-center">
+            Top Boni
+          </div>
           <div class="card-body">
-            <h5 class="card-title">Top Boni</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -53,11 +57,11 @@
       </div>
       <div class="col-4 pt-5">
         <div class="card" style="width: 18rem">
-          <img
+          <!-- <img
             src="~/assets/images/logo/logo.png"
             class="card-img-top"
             alt="..."
-          />
+          /> -->
           <div class="card-body">
             <h5 class="card-title">Spieleangebot</h5>
             <p class="card-text">
@@ -78,11 +82,11 @@
       </div>
       <div class="col-4 pt-5">
         <div class="card" style="width: 18rem">
-          <img
+          <!-- <img
             src="~/assets/images/logo/logo.png"
             class="card-img-top"
             alt="..."
-          />
+          /> -->
           <div class="card-body">
             <h5 class="card-title">Zahlungsmethoden</h5>
             <p class="card-text">
@@ -103,11 +107,11 @@
       </div>
       <div class="col-4 pt-5">
         <div class="card" style="width: 18rem">
-          <img
+          <!-- <img
             src="~/assets/images/logo/logo.png"
             class="card-img-top"
             alt="..."
-          />
+          /> -->
           <div class="card-body">
             <h5 class="card-title">Spielregeln</h5>
             <p class="card-text">
@@ -128,11 +132,11 @@
       </div>
       <div class="col-4 pt-5">
         <div class="card" style="width: 18rem">
-          <img
+          <!-- <img
             src="~/assets/images/logo/logo.png"
             class="card-img-top"
             alt="..."
-          />
+          /> -->
           <div class="card-body">
             <h5 class="card-title">Online Slots</h5>
             <p class="card-text">
@@ -155,4 +159,12 @@
   </div>
 </template>
 
-
+<style scoped>
+.cardTitle {
+  width: 100%;
+  background-color: green;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+</style>

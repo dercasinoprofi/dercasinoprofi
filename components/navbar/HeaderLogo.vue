@@ -1,15 +1,18 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-custom container roundCorners">
-      <div class="container-fluid">
+    <div class="container-fluid pt-2 pb-2">
+      <div class="text-center">
         <a class="navbar-brand" href="#">
           <img
             src="~/assets/images/logo/logo.png"
-            alt=""
-            width="200"
+            :alt="config.siteName"
             class="d-inline-block align-text-top"
           />
         </a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-custom container roundCorners">
+      <div class="container-fluid">
         <button
           class="navbar-toggler"
           type="button"
