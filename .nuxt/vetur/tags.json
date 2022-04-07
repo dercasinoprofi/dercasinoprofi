@@ -1,13 +1,4 @@
 {
-  "CardsCard": {
-    "description": "Auto imported from components/cards/Card.vue"
-  },
-  "CardsGroup": {
-    "description": "Auto imported from components/cards/Group.vue"
-  },
-  "CardsHorizontal": {
-    "description": "Auto imported from components/cards/Horizontal.vue"
-  },
   "CustomFeatureLinks": {
     "description": "Auto imported from components/custom/FeatureLinks.vue"
   },
@@ -19,6 +10,15 @@
   },
   "Footer": {
     "description": "Auto imported from components/footer/Footer.vue"
+  },
+  "CardsCard": {
+    "description": "Auto imported from components/cards/Card.vue"
+  },
+  "CardsGroup": {
+    "description": "Auto imported from components/cards/Group.vue"
+  },
+  "CardsHorizontal": {
+    "description": "Auto imported from components/cards/Horizontal.vue"
   },
   "NavbarHeaderLogo": {
     "description": "Auto imported from components/navbar/HeaderLogo.vue"
