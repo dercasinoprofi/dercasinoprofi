@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-4 pt-5" v-for="(casino, index) in casinos" :key="index">
-          <div class="card" style="width: 18rem">
+          <div class="card">
             <img
               :src="`/images/anbieter/${casino.logo}`"
               class="card-img-top"
@@ -11,11 +11,9 @@
             />
             <div class="card-body">
               <h5 class="card-title">{{ casinos.name }}</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-text h6">
+                {{ casino.subline }}
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
@@ -38,3 +36,16 @@ export default {
   },
 };
 </script>
+
+
+<style scoped>
+.topCasinoImage {
+  margin: 20px;
+  vertical-align: middle;
+
+  padding: 50px;
+}
+
+.subline {
+}
+</style>

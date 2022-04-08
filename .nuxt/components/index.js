@@ -4,9 +4,9 @@ export { default as CardsHorizontal } from '../../components/cards/Horizontal.vu
 export { default as CustomFeatureLinks } from '../../components/custom/FeatureLinks.vue'
 export { default as CustomStartpageText } from '../../components/custom/StartpageText.vue'
 export { default as CustomTopCasinos } from '../../components/custom/TopCasinos.vue'
-export { default as Footer } from '../../components/footer/Footer.vue'
 export { default as NavbarHeaderLogo } from '../../components/navbar/HeaderLogo.vue'
 export { default as NavbarHeaderStandard } from '../../components/navbar/HeaderStandard.vue'
+export { default as Footer } from '../../components/footer/Footer.vue'
 export { default as SliderHeaderSliderControls } from '../../components/slider/HeaderSliderControls.vue'
 
 // nuxt/nuxt.js#8607

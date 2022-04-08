@@ -2,7 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="fs-1 pt-5 text-center">FINDE DIE BESTEN ONLINE CASINOS</div>
+        <div class="fs-1 pt-5 text-center">
+          <h1>FINDE DIE BESTEN ONLINE CASINOS</h1>
+        </div>
         <div class="fs-4 pt-5 text-center">
           Sicher, zuverlässig, kostenlos - Von Spielern für Spieler
         </div>

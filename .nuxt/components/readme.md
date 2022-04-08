@@ -12,7 +12,7 @@ You can directly use them in pages and other components without the need to impo
 - `<CustomFeatureLinks>` | `<custom-feature-links>` (components/custom/FeatureLinks.vue)
 - `<CustomStartpageText>` | `<custom-startpage-text>` (components/custom/StartpageText.vue)
 - `<CustomTopCasinos>` | `<custom-top-casinos>` (components/custom/TopCasinos.vue)
-- `<Footer>` | `<footer>` (components/footer/Footer.vue)
 - `<NavbarHeaderLogo>` | `<navbar-header-logo>` (components/navbar/HeaderLogo.vue)
 - `<NavbarHeaderStandard>` | `<navbar-header-standard>` (components/navbar/HeaderStandard.vue)
+- `<Footer>` | `<footer>` (components/footer/Footer.vue)
 - `<SliderHeaderSliderControls>` | `<slider-header-slider-controls>` (components/slider/HeaderSliderControls.vue)
