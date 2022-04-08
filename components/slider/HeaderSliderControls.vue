@@ -15,6 +15,12 @@
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-caption d-none d-md-block featureText">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
               </div>
               <div class="carousel-item">
                 <img
@@ -75,3 +81,6 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+</style>

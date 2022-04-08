@@ -1,14 +1,21 @@
 <template>
   <div class="container">
     <div class="row pt-5">
-      <div class="col-4 pt-5">
+      <div class="col-4 pt-5 casino-vergleich">
         <div class="card">
           <!-- <img
             src="~/assets/images/logo/logo.png"
             class="card-img-top"
             alt="..."
           /> -->
-          <div class="card-header cardTitle fw-bold text-light text-center">
+          <div
+            class="
+              card-header
+              cardTitleBlue
+              fw-bold
+              text-light text-center text-uppercase
+            "
+          >
             Casino Vergleich
           </div>
           <div class="card-body">
@@ -33,7 +40,14 @@
             class="card-img-top"
             alt="..."
           /> -->
-          <div class="card-header cardTitle fw-bold text-light text-center">
+          <div
+            class="
+              card-header
+              cardTitleBlack
+              fw-bold
+              text-light text-center text-uppercase
+            "
+          >
             Top Boni
           </div>
           <div class="card-body">
@@ -58,7 +72,14 @@
             class="card-img-top"
             alt="..."
           /> -->
-          <div class="card-header cardTitle fw-bold text-light text-center">
+          <div
+            class="
+              card-header
+              cardTitleRed
+              fw-bold
+              text-light text-center text-uppercase
+            "
+          >
             Spieleangebot
           </div>
           <div class="card-body">
@@ -83,7 +104,14 @@
             class="card-img-top"
             alt="..."
           /> -->
-          <div class="card-header cardTitle fw-bold text-light text-center">
+          <div
+            class="
+              card-header
+              cardTitleBlack
+              fw-bold
+              text-light text-center text-uppercase
+            "
+          >
             Zahlungsmethoden
           </div>
           <div class="card-body">
@@ -108,7 +136,14 @@
             class="card-img-top"
             alt="..."
           /> -->
-          <div class="card-header cardTitle fw-bold text-light text-center">
+          <div
+            class="
+              card-header
+              cardTitleRed
+              fw-bold
+              text-light text-center text-uppercase
+            "
+          >
             Spielregeln
           </div>
           <div class="card-body">
@@ -133,7 +168,14 @@
             class="card-img-top"
             alt="..."
           /> -->
-          <div class="card-header cardTitle fw-bold text-light text-center">
+          <div
+            class="
+              card-header
+              cardTitleBlue
+              fw-bold
+              text-light text-center text-uppercase
+            "
+          >
             Online Slots
           </div>
           <div class="card-body">
@@ -157,9 +199,25 @@
 </template>
 
 <style scoped>
-.cardTitle {
+.cardTitleBlue {
   width: 100%;
-  background-color: green;
+  background: #3554b0;
+  color: #fff;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.cardTitleBlack {
+  width: 100%;
+  background: #222;
+  color: #fff;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.cardTitleRed {
+  width: 100%;
+  background: #e02400;
   color: #fff;
   font-size: 22px;
   text-transform: capitalize;
