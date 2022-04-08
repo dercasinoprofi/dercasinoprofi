@@ -3,7 +3,7 @@
     <div class="card-group pt-2">
       <div class="card">
         <img
-          src="~/assets/images/bootstrap-logo.svg"
+          src="/images/bootstrap-logo.svg"
           class="card-img-top thumbnail"
           alt="..."
         />
@@ -20,7 +20,7 @@
       </div>
       <div class="card">
         <img
-          src="~/assets/images/bootstrap-logo.svg"
+          src="/images/bootstrap-logo.svg"
           class="card-img-top thumbnail"
           alt="..."
         />
@@ -37,7 +37,7 @@
       </div>
       <div class="card">
         <img
-          src="~/assets/images/bootstrap-logo.svg"
+          src="/images/bootstrap-logo.svg"
           class="card-img-top thumbnail"
           alt="..."
         />

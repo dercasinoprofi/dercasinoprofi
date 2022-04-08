@@ -4,7 +4,7 @@
       <div class="text-center">
         <a class="navbar-brand" href="#">
           <img
-            src="~/assets/images/logo/logo.png"
+            src="/images/logo/logo.png"
             :alt="config.siteName"
             class="d-inline-block align-text-top"
           />
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul
             class="navbar-nav"
-            v-for="(link, index) in config.navigationLinks"
+            v-for="(link, index) in navigationLinks"
             :key="index"
           >
             <li class="nav-item text-light fw-bold">
@@ -81,13 +81,16 @@
 
 <script>
 import config from "../../assets/config";
+const navigationLinks = config.navigationLinks.filter(
+  (x) => x.publish === true
+);
 
 export default {
   name: "headerlogo",
-  props: ["navigationLinks"],
   data() {
     return {
       config,
+      navigationLinks,
     };
   },
 };
