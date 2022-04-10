@@ -12,7 +12,7 @@ db = client['casinoapi']
 
 for x in db.slots.find():
     slug = x['thumbnail']
-    y = slug.split('.png')[0]
+    y = slug.split('.png')[0].replace('™', '')
 
     x['slug'] = y
     db.slots.update_one(
