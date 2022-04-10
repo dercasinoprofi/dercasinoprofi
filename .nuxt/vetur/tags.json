@@ -1,4 +1,7 @@
 {
+  "Game": {
+    "description": "Auto imported from components/Game.vue"
+  },
   "CardsCard": {
     "description": "Auto imported from components/cards/Card.vue"
   },
@@ -17,14 +20,14 @@
   "CustomTopCasinos": {
     "description": "Auto imported from components/custom/TopCasinos.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/footer/Footer.vue"
+  },
   "NavbarHeaderLogo": {
     "description": "Auto imported from components/navbar/HeaderLogo.vue"
   },
   "NavbarHeaderStandard": {
     "description": "Auto imported from components/navbar/HeaderStandard.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/footer/Footer.vue"
   },
   "SliderHeaderSliderControls": {
     "description": "Auto imported from components/slider/HeaderSliderControls.vue"

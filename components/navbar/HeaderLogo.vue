@@ -2,13 +2,13 @@
   <div>
     <div class="container-fluid pt-2 pb-2">
       <div class="text-center">
-        <a class="navbar-brand" href="#">
+        <nuxt-link class="navbar-brand" to="/">
           <img
             src="/images/logo/logo.png"
             :alt="config.siteName"
             class="d-inline-block align-text-top"
           />
-        </a>
+        </nuxt-link>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-custom container roundCorners">

@@ -40,8 +40,35 @@ export default {
     buildModules: [],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: [
+        '@nuxtjs/axios'
+    ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
+
+    image: {
+        staticFilename: '[publicPath]/images/thumbs/[name]-[hash][ext]',
+        provider: 'static',
+        presets: {
+            categoryThumbnail: {
+                modifiers: {
+                    format: 'webp',
+                    quality: 80,
+                }
+            },
+            videoThumbnail: {
+                modifiers: {
+                    format: 'webp',
+                    quality: 80
+                }
+            },
+            logo: {
+                modifiers: {
+                    format: 'webp',
+                    quality: 80
+                }
+            },
+        }
+    },
 }

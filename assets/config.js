@@ -22,7 +22,7 @@ const config = {
         { name: 'Start', title: 'Online Casinos', url: '/', publish: true },
         { name: 'Casinos', title: 'Casinos', url: '/online-casinos/', publish: false },
         { name: 'Bonus', title: 'Casino Bonus', url: '/casino-bonus/', publish: false },
-        { name: 'Slots', title: 'Online Slots', url: '/online-slots/', publish: false },
+        { name: 'Slots', title: 'Online Slots', url: '/slots/', publish: true },
         { name: 'Mobile', title: 'Mobile Casinos', url: '/mobile-casinos/', publish: false },
         { name: 'Paypal Casinos', title: 'Paypal Casino', url: '/paypal-casino/', publish: false },
         { name: 'Zahlungsmethoden', title: 'Casino Zahlungsmethoden', url: '/casino-zahlungsmoeglichkeiten/', publish: false },
