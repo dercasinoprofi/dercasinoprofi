@@ -47,6 +47,8 @@ a {
 </style>
 
 <script>
+import config from "../../assets/config";
+
 export default {
   name: "game",
   async asyncData({ route, $axios }) {
@@ -54,7 +56,7 @@ export default {
     const params = {
       slug,
     };
-    const data = await $axios.get("http://localhost:3002/slot", { params });
+    const data = await $axios.get(config.slotUrl, { params });
     const game = data.data.game;
 
     return {

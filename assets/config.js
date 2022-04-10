@@ -3,6 +3,8 @@ const config = {
     siteName: "Der Casino Profi",
     title: "The coolest website ever",
     apiUrl: "http://localhost:3002",
+    slotsUrl: 'http://localhost:3002/slots',
+    slotUrl: 'http://localhost:3002/slot',
     metaCharset: 'utf-8',
     meta: {
         htmlLang: "de",
