@@ -35,10 +35,12 @@ mongo.connect(
 app.get('/slots', (req, res) => {
     console.log("slots send")
     const limit = parseInt(req.query.limit)
+    const skip = parseInt(req.query.skip)
+    console.log(limit, skip, "asdf")
     const provider = req.query.provider
     const myFilter = provider ? { provider: provider } : {}
     const order = { _id: -1 }
-    slots.find(myFilter).sort(order).limit(limit).skip(0).toArray((err, slots) => {
+    slots.find(myFilter).sort(order).limit(limit).skip(skip).toArray((err, slots) => {
         if (err) {
             console.error(err)
             res.status(500).json({ err: err })

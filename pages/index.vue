@@ -25,6 +25,7 @@ export default {
     const numberOfSlots = config.slots.numberOfSlots;
     const params = {
       limit: numberOfSlots,
+      skip: 0,
     };
     const data = await $axios.get(config.slotsUrl, { params });
     const games = data.data.slots;

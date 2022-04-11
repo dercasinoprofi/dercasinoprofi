@@ -14,7 +14,7 @@ const config = {
     },
     slots: {
         numberOfSlots: 20,
-        limit: 20,
+        limit: 10,
         maximalPaginationSize: 100
     },
     provider: [

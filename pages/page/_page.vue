@@ -21,7 +21,14 @@
         <div class="col-md-6 offset-md-3 d-flex justify-content-center">
           <ul class="pagination">
             <li>
-              <nuxt-link :to="`/page/2/`" v-if="nextPage">
+              <nuxt-link :to="prevLink"
+                ><button class="pageButtons buttons btn btn-primary">
+                  Vorige Seite
+                </button></nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link v-if="nextPage" :to="`/page/${pageNumber + 1}/`">
                 <button class="pageButtons buttons btn btn-primary">
                   Nächste Seite
                 </button>
@@ -34,29 +41,48 @@
   </div>
 </template>
 
+
 <script>
-import config from "../assets/config";
+import config from "~/assets/config";
 
 export default {
-  name: "slots",
+  name: "slotPage",
   data() {
     return {};
   },
-  async asyncData({ $axios }) {
-    const skip = 0;
+  async asyncData({ route, $axios }) {
+    const maximalPaginationSize = config.slots.maximalPaginationSize;
+    const pageNumber = parseInt(route.params.page);
+    const skip = pageNumber >= 0 ? config.slots.limit * (pageNumber - 1) : 0;
     const limit = config.slots.limit;
+    const url = config.slotsUrl;
     const params = {
-      limit,
       skip,
+      limit,
     };
     const data = await $axios.$get(config.slotsUrl, { params });
-    const nextPage = data.slots.length === config.slots.limit;
+
+    if (!data.slots.length) {
+      return Error({ statusCode: 404, message: "No slots found!" });
+    }
+
+    const nextPage =
+      data.slots.length === config.slots.limit &&
+      pageNumber <= maximalPaginationSize;
     const games = nextPage ? data.slots.slice(0, -1) : data.slots;
 
     return {
       games,
       nextPage,
+      pageNumber,
     };
+  },
+  computed: {
+    prevLink() {
+      return this.pageNumber === 2
+        ? `/slots/`
+        : `/page/${this.pageNumber - 1}/`;
+    },
   },
 };
 </script>
