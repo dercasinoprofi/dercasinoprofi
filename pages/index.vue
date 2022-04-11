@@ -2,6 +2,8 @@
   <div>
     <SliderHeaderSliderControls />
 
+    <Anbieter />
+
     <Games :games="games" />
 
     <CustomFeatureLinks />

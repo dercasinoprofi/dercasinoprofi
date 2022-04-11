@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-5">
     <footer>
       <div class="container" style="width: 1930px">
         <p>
@@ -209,7 +209,7 @@ import config from "../../assets/config";
 const provider = config.provider.filter((x) => x.publish === true);
 
 export default {
-  name: "footer",
+  name: "footerNav",
   data() {
     return {
       config,

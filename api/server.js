@@ -36,7 +36,7 @@ app.get('/slots', (req, res) => {
     console.log("slots send")
     const limit = parseInt(req.query.limit)
     const skip = parseInt(req.query.skip)
-    console.log(limit, skip, "asdf")
+    console.log(limit, skip, "limit and skip")
     const provider = req.query.provider
     const myFilter = provider ? { provider: provider } : {}
     const order = { _id: -1 }

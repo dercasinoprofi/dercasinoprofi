@@ -18,7 +18,7 @@ const config = {
         maximalPaginationSize: 100
     },
     provider: [
-        { key: 'pragmaticplay', name: 'Pragmatic Play', publish: true }
+        { key: 'pragmaticplay', name: 'Pragmatic Play', logo: 'pragmaticplay.jpg', subline: 'Pragmatic Slots for free', publish: true }
     ],
     navigationLinks: [
         { name: 'Start', title: 'Online Casinos', url: '/', publish: true },
