@@ -48,7 +48,7 @@
               <nuxt-link
                 class="nav-link active removeLink"
                 aria-current="page"
-                :to="`/provider/${provider.key}/1`"
+                :to="`/provider/${provider.key}/1/`"
                 :title="provider.name"
                 >{{ provider.name }}</nuxt-link
               >

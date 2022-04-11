@@ -18,7 +18,7 @@ const config = {
         maximalPaginationSize: 100
     },
     provider: [
-        { key: 'pragmaticplay', name: 'Pragmatic Play' }
+        { key: 'pragmaticplay', name: 'Pragmatic Play', publish: true }
     ],
     navigationLinks: [
         { name: 'Start', title: 'Online Casinos', url: '/', publish: true },

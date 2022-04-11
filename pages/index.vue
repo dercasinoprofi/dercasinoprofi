@@ -8,7 +8,7 @@
 
     <CustomTopCasinos />
 
-    <CustomStartpageText />
+    <!-- <CustomStartpageText /> -->
 
     <!-- <CardsCard /> -->
     <!-- <CardsGroup /> -->

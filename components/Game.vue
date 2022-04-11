@@ -1,6 +1,6 @@
 <template>
   <div class="card border-0">
-    <NuxtLink :to="`/slot/${game.slug}`" :title="game.name">
+    <NuxtLink :to="`/slot/${game.slug}/`" :title="game.name">
       <img
         preset="videoThumbnail"
         :src="`/images/thumbs/${game.thumbnail}`"
@@ -10,7 +10,7 @@
     </NuxtLink>
     <!-- <div class="card-body"> -->
     <span class="h6 card-title">
-      <NuxtLink :to="`/slot/${game.slug}`" :title="game.name">
+      <NuxtLink :to="`/slot/${game.slug}/`" :title="game.name">
         {{ game.name }}
       </NuxtLink>
     </span>

@@ -85,7 +85,7 @@ export default {
   computed: {
     prevLink() {
       return this.pageNumber === 2
-        ? `/provider/${this.provider}/1`
+        ? `/provider/${this.provider}/1/`
         : `/provider/${this.provider}/${this.pageNumber - 1}/`;
     },
   },
