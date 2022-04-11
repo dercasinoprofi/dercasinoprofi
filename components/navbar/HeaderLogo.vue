@@ -25,18 +25,32 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul
-            class="navbar-nav"
-            v-for="(link, index) in navigationLinks"
-            :key="index"
-          >
-            <li class="nav-item text-light fw-bold">
+          <ul class="navbar-nav">
+            <li
+              v-for="(link, index) in navigationLinks"
+              :key="index"
+              class="nav-item text-light fw-bold"
+            >
               <nuxt-link
                 class="nav-link active removeLink"
                 aria-current="page"
                 :to="link.url"
                 :title="link.title"
                 >{{ link.name }}</nuxt-link
+              >
+            </li>
+
+            <li
+              class="nav-item text-light fw-bold"
+              v-for="(provider, index) in config.provider"
+              :key="index"
+            >
+              <nuxt-link
+                class="nav-link active removeLink"
+                aria-current="page"
+                :to="`/provider/${provider.key}`"
+                :title="provider.name"
+                >{{ provider.name }}</nuxt-link
               >
             </li>
           </ul>

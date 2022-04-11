@@ -35,7 +35,8 @@ mongo.connect(
 app.get('/slots', (req, res) => {
     console.log("slots send")
     const limit = parseInt(req.query.limit)
-    const myFilter = { provider: 'pragmaticplay' }
+    const provider = req.query.provider
+    const myFilter = provider ? { provider: provider } : {}
     const order = { _id: -1 }
     slots.find(myFilter).sort(order).limit(limit).skip(0).toArray((err, slots) => {
         if (err) {

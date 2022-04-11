@@ -12,15 +12,14 @@ const config = {
         description: "Online Casinos auf dem Prüfstand. Nur bei CasinoVergleicher.com findest du so schnell das Top Casino, welches zu dir passt. Sicher. Zuverlässig. Kostenlos.",
         keywords: "online, casino, slots, bonus",
     },
-    tags: {
-        includeTags: ["sometag"],
-        excludeTags: ["anothertag"]
-    },
     slots: {
         numberOfSlots: 20,
         limit: 20,
         maximalPaginationSize: 100
     },
+    provider: [
+        { key: 'pragmaticplay', name: 'Pragmatic Play' }
+    ],
     navigationLinks: [
         { name: 'Start', title: 'Online Casinos', url: '/', publish: true },
         { name: 'Casinos', title: 'Casinos', url: '/online-casinos/', publish: false },
