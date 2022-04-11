@@ -32,10 +32,12 @@ mongo.connect(
     }
 )
 
-app.get('/slots/', (req, res) => {
+app.get('/slots', (req, res) => {
+    console.log("bla")
+    const numberOfSlots = parseInt(req.query.numberOfSlots)
     const myFilter = { provider: 'pragmaticplay' }
     const order = { _id: -1 }
-    slots.find(myFilter).sort(order).limit(300).skip(0).toArray((err, slots) => {
+    slots.find(myFilter).sort(order).limit(numberOfSlots).skip(0).toArray((err, slots) => {
         if (err) {
             console.error(err)
             res.status(500).json({ err: err })
@@ -108,4 +110,4 @@ app.get('/video-count', (req, res) => {
     })
 })
 
-app.listen({ port, host: '0.0.0.0' }, () => console.log('server running on port', port))
+app.listen({ port, host: '0.0.0.0' }, () => console.log('api server running on port', port))

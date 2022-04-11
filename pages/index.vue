@@ -2,6 +2,8 @@
   <div>
     <SliderHeaderSliderControls />
 
+    <Games :games="games" />
+
     <CustomFeatureLinks />
 
     <CustomTopCasinos />
@@ -15,7 +17,20 @@
 </template>
 
 <script>
+import config from "../assets/config";
+
 export default {
   name: "IndexPage",
+  async asyncData({ $axios }) {
+    const numberOfSlots = 10;
+    const params = {
+      numberOfSlots,
+    };
+    const data = await $axios.get(config.slotsUrl, { params });
+    const games = data.data.slots;
+    return {
+      games,
+    };
+  },
 };
 </script>

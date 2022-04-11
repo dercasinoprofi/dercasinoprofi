@@ -9,7 +9,7 @@
 
       <div class="row pt-2">
         <div
-          class="col-xl-2 col-lg-3 col-md-4 col-sm-6 text-center"
+          class="col-xl-4 col-lg-4 col-md-4 col-sm-6 text-center"
           v-for="(game, id) in games"
           :key="id"
         >
@@ -29,7 +29,11 @@ export default {
     return {};
   },
   async asyncData({ $axios }) {
-    const data = await $axios.get(config.slotsUrl);
+    const numberOfSlots = 10;
+    const params = {
+      numberOfSlots,
+    };
+    const data = await $axios.get(config.slotsUrl, { params });
     const games = data.data.slots;
     console.log(games);
     return {

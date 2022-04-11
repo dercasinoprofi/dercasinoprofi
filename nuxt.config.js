@@ -37,7 +37,9 @@ export default {
     components: true,
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [],
+    buildModules: [
+        '@nuxtjs/google-fonts',
+    ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
@@ -71,4 +73,16 @@ export default {
             },
         }
     },
+
+    googleFonts: {
+        families: {
+            Oswald: true,
+            // 'Josefin+Sans': true,
+            // Lato: [100, 300],
+            // Raleway: {
+            //     wght: [100, 400],
+            //     ital: [100]
+            // },
+        }
+    }
 }

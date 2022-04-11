@@ -15,11 +15,11 @@
                   class="d-block w-100"
                   alt="..."
                 />
-                <div class="carousel-caption d-none d-md-block featureText">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="boxShadow mb-5">
+                    <p class="h1">Slot Machines</p>
+                    <p>Spiele kostenlos Casino Slots</p>
+                  </div>
                 </div>
               </div>
               <!-- <div class="carousel-item">
@@ -83,4 +83,19 @@
 </template>
 
 <style scoped>
+.boxShadow {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: "Oswald";
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  line-height: 120%;
+  text-transform: uppercase;
+  display: block;
+  clear: both;
+}
 </style>
