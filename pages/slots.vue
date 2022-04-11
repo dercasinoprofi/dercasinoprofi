@@ -29,13 +29,12 @@ export default {
     return {};
   },
   async asyncData({ $axios }) {
-    const numberOfSlots = 10;
+    const limit = config.slots.limit;
     const params = {
-      numberOfSlots,
+      limit,
     };
     const data = await $axios.get(config.slotsUrl, { params });
     const games = data.data.slots;
-    console.log(games);
     return {
       games,
     };

@@ -22,9 +22,9 @@ import config from "../assets/config";
 export default {
   name: "IndexPage",
   async asyncData({ $axios }) {
-    const numberOfSlots = 10;
+    const numberOfSlots = config.slots.numberOfSlots;
     const params = {
-      numberOfSlots,
+      limit: numberOfSlots,
     };
     const data = await $axios.get(config.slotsUrl, { params });
     const games = data.data.slots;

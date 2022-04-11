@@ -16,8 +16,9 @@ const config = {
         includeTags: ["sometag"],
         excludeTags: ["anothertag"]
     },
-    videos: {
-        limit: 40,
+    slots: {
+        numberOfSlots: 20,
+        limit: 20,
         maximalPaginationSize: 100
     },
     navigationLinks: [

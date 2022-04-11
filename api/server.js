@@ -33,11 +33,11 @@ mongo.connect(
 )
 
 app.get('/slots', (req, res) => {
-    console.log("bla")
-    const numberOfSlots = parseInt(req.query.numberOfSlots)
+    console.log("slots send")
+    const limit = parseInt(req.query.limit)
     const myFilter = { provider: 'pragmaticplay' }
     const order = { _id: -1 }
-    slots.find(myFilter).sort(order).limit(numberOfSlots).skip(0).toArray((err, slots) => {
+    slots.find(myFilter).sort(order).limit(limit).skip(0).toArray((err, slots) => {
         if (err) {
             console.error(err)
             res.status(500).json({ err: err })
@@ -47,6 +47,7 @@ app.get('/slots', (req, res) => {
 })
 
 app.get('/slot', (req, res) => {
+    console.log("slot send")
     let slug = req.query.slug
     slots.findOne({ slug: slug }, (err, game) => {
         if (err) {
