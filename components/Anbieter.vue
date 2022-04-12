@@ -10,7 +10,7 @@
           <div class="card">
             <nuxt-link
               :to="`/provider/${provider.key}/1/`"
-              :title="provider.key"
+              :title="provider.name"
             >
               <img
                 :src="`/images/provider/${provider.logo}`"
@@ -19,7 +19,13 @@
               />
             </nuxt-link>
             <div class="card-body">
-              <h5 class="card-title">{{ providers.name }}</h5>
+              <h5 class="card-title">
+                <nuxt-link
+                  :to="`/provider/${provider.key}/1/`"
+                  :title="provider.name"
+                  >{{ providers.name }}</nuxt-link
+                >
+              </h5>
               <p class="card-text h6">
                 {{ provider.subline }}
               </p>
@@ -36,9 +42,9 @@
 <script>
 import config from "../assets/config";
 const providers = config.provider.filter((x) => x.publish === true);
-console.log(providers, "anbieter");
+
 export default {
-  name: "featurelinks",
+  name: "providerComponent",
   data() {
     return {
       providers,

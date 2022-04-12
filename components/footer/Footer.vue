@@ -197,7 +197,14 @@
 
         <hr />
 
-        <p class="copy">© 2018 <span>CASINOVERGLEICHER</span></p>
+        <p class="copy">
+          © 2022
+          <span
+            ><nuxt-link to="/" :title="config.title">{{
+              config.siteName
+            }}</nuxt-link></span
+          >
+        </p>
         <hr />
       </div>
     </footer>

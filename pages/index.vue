@@ -4,11 +4,11 @@
 
     <Anbieter />
 
-    <Games :games="games" />
+    <Games :games="games" class="pt-5" />
 
-    <CustomFeatureLinks />
+    <!-- <CustomFeatureLinks /> -->
 
-    <CustomTopCasinos />
+    <!-- <CustomTopCasinos /> -->
 
     <!-- <CustomStartpageText /> -->
 

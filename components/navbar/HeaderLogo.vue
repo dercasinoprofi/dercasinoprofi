@@ -2,7 +2,7 @@
   <div>
     <div class="container-fluid pt-2 pb-2">
       <div class="text-center">
-        <nuxt-link class="navbar-brand" to="/">
+        <nuxt-link class="navbar-brand" to="/" :title="config.title">
           <img
             src="/images/logo/logo.png"
             :alt="config.siteName"

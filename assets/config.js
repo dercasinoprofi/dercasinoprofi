@@ -1,7 +1,7 @@
 const config = {
     baseURL: "https://google.com",
     siteName: "Der Casino Profi",
-    title: "The coolest website ever",
+    title: "Kostenlose Casino Slots spielen",
     apiUrl: "http://localhost:3002",
     slotsUrl: 'http://localhost:3002/slots',
     slotUrl: 'http://localhost:3002/slot',
@@ -17,11 +17,19 @@ const config = {
         limit: 10,
         maximalPaginationSize: 100
     },
-    provider: [
-        { key: 'pragmaticplay', name: 'Pragmatic Play', logo: 'pragmaticplay.jpg', subline: 'Pragmatic Slots for free', publish: true }
-    ],
+    provider: [{
+        key: 'pragmaticplay',
+        name: 'Pragmatic Play',
+        logo: 'pragmaticplay.jpg',
+        subline: 'Pragmatic Slots kostenlos spielen',
+        publish: true,
+        meta: {
+            title: 'Pragmatic Play Slots kostenlos spielen',
+            metaDescription: 'Spiele kostenlose Slot Maschinen von Pragmatic Play. Kein Echtgeld notwendig. Testen Sie die Spiele bevor Sie sie im Casino spielen.'
+        }
+    }],
     navigationLinks: [
-        { name: 'Start', title: 'Online Casinos', url: '/', publish: true },
+        { name: 'Start', title: 'Online Slots', url: '/', publish: true },
         { name: 'Casinos', title: 'Casinos', url: '/online-casinos/', publish: false },
         { name: 'Bonus', title: 'Casino Bonus', url: '/casino-bonus/', publish: false },
         { name: 'Slots', title: 'Online Slots', url: '/slots/', publish: true },

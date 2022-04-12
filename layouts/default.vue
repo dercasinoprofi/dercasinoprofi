@@ -24,8 +24,8 @@ export default {
 
 <style>
 .pageButtons {
-  background-color: crimson;
-  font-size: 50px;
+  background-color: green;
+  font-size: 30px;
   font-weight: bold;
   color: #fff;
   margin-right: 10px;
