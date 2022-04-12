@@ -52,6 +52,25 @@ export default {
   data() {
     return {};
   },
+  head() {
+    const p = config.provider.find((x) => x.key === this.provider);
+
+    return {
+      title: p.meta.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: p.meta.metaDescription,
+        },
+        {
+          hid: "robots",
+          name: "robots",
+          content: this.pageNumber === 1 ? "index, follow" : "noindex, follow",
+        },
+      ],
+    };
+  },
   async asyncData({ $axios, route }) {
     const maximalPaginationSize = config.slots.maximalPaginationSize;
     const provider = route.params.provider;
