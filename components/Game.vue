@@ -1,7 +1,7 @@
 <template>
   <div class="card border-0">
     <NuxtLink :to="`/slot/${game.slug}/`" :title="`${game.name} Slot`">
-      <img
+      <nuxt-img
         preset="videoThumbnail"
         :src="`/images/thumbs/${game.thumbnail}`"
         class="thumbnail"

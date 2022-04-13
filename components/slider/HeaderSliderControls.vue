@@ -10,7 +10,7 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
+                <nuxt-img
                   src="/images/header/header1.jpg"
                   class="d-block w-100"
                   alt="..."
@@ -23,28 +23,28 @@
                 </div>
               </div>
               <!-- <div class="carousel-item">
-                <img
+                <nuxt-img
                   src="/images/header/header2.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
-                <img
+                <nuxt-img
                   src="/images/header/header3.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
-                <img
+                <nuxt-img
                   src="/images/header/header4.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
-                <img
+                <nuxt-img
                   src="/images/header/header5.jpg"
                   class="d-block w-100"
                   alt="..."

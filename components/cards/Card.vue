@@ -1,6 +1,6 @@
 <template>
   <div class="card" style="width: 18rem">
-    <img
+    <nuxt-img
       src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
       class="card-img-top"
       alt="..."

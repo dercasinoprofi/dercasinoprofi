@@ -12,7 +12,7 @@
               :to="`/provider/${provider.key}/1/`"
               :title="provider.name"
             >
-              <img
+              <nuxt-img
                 :src="`/images/provider/${provider.logo}`"
                 class="card-img-top"
                 :alt="provider.name"
