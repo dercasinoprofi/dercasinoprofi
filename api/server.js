@@ -32,6 +32,16 @@ mongo.connect(
     }
 )
 
+app.get('/counter', (req, res) => {
+    db.collection(slotsTable).count((err, counter) => {
+        if (err) {
+            console.error(err)
+            res.status(500).json({ err: err })
+        }
+        res.status(200).json({ counter })
+    })
+})
+
 app.get('/slots', (req, res) => {
     const limit = parseInt(req.query.limit)
     const skip = parseInt(req.query.skip)

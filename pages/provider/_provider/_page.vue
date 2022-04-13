@@ -85,18 +85,21 @@ export default {
       provider,
     };
     const data = await $axios.get(config.slotsUrl, { params });
+    const counterData = await $axios.get("http://localhost:3002/counter");
+    const counter = counterData.data.counter;
 
     if (!data.data.slots.length) {
-      return Error({ statusCode: 404, message: "No videos found!" });
+      return Error({ statusCode: 404, message: "No slots found!" });
     }
-
+    console.log(pageNumber * 10, counter);
     const nextPage =
       data.data.slots.length === config.slots.limit &&
-      pageNumber <= maximalPaginationSize;
+      pageNumber <= maximalPaginationSize &&
+      pageNumber * 10 < counter;
     const games = nextPage ? data.data.slots.slice(0, -1) : data.data.slots;
 
-    // seo
     const p = config.provider.find((x) => x.key === provider);
+
     return {
       games,
       nextPage,
