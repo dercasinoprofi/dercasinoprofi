@@ -3,7 +3,7 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1 class="pb-3">{{ game.name }}</h1>
+          <h1 class="pb-3">{{ game.name }} Slot</h1>
           <div class="ratio ratio-16x9">
             <iframe
               allowfullscreen
