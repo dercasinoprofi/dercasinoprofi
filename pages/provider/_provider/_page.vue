@@ -91,7 +91,6 @@ export default {
     if (!data.data.slots.length) {
       return Error({ statusCode: 404, message: "No slots found!" });
     }
-    console.log(pageNumber * 10, counter);
     const nextPage =
       data.data.slots.length === config.slots.limit &&
       pageNumber <= maximalPaginationSize &&
