@@ -33,7 +33,6 @@ mongo.connect(
 )
 
 app.get('/slots', (req, res) => {
-    console.log("slots send")
     const limit = parseInt(req.query.limit)
     const skip = parseInt(req.query.skip)
     console.log(limit, skip, "limit and skip")
@@ -50,7 +49,6 @@ app.get('/slots', (req, res) => {
 })
 
 app.get('/slot', (req, res) => {
-    console.log("slot send")
     let slug = req.query.slug
     slots.findOne({ slug: slug }, (err, game) => {
         if (err) {
