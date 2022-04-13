@@ -54,6 +54,12 @@ export default {
         staticFilename: '[publicPath]/images/thumbs/[name]-[hash][ext]',
         provider: 'static',
         presets: {
+            default: {
+                modifiers: {
+                    format: 'webp',
+                    quality: 80,
+                }
+            },
             categoryThumbnail: {
                 modifiers: {
                     format: 'webp',
@@ -88,5 +94,10 @@ export default {
     },
     router: {
         trailingSlash: true
+    },
+
+    generate: {
+        dir: 'docs/',
+        fallback: '404.html'
     }
 }

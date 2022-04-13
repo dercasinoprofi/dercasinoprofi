@@ -3,6 +3,7 @@
     <div class="card-group pt-2">
       <div class="card">
         <nuxt-img
+          preset="default"
           src="/images/bootstrap-logo.svg"
           class="card-img-top thumbnail"
           alt="..."
@@ -20,6 +21,7 @@
       </div>
       <div class="card">
         <nuxt-img
+          preset="default"
           src="/images/bootstrap-logo.svg"
           class="card-img-top thumbnail"
           alt="..."
@@ -37,6 +39,7 @@
       </div>
       <div class="card">
         <nuxt-img
+          preset="default"
           src="/images/bootstrap-logo.svg"
           class="card-img-top thumbnail"
           alt="..."

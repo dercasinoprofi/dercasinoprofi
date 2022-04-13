@@ -5,6 +5,7 @@
       <div class="container">
         <nuxt-link class="navbar-brand" to="/" :title="config.title">
           <nuxt-img
+            preset="default"
             src="/images/logo/logo_transparent.png"
             :alt="config.siteName"
             height="70"

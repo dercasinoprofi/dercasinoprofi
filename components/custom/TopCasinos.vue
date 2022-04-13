@@ -5,6 +5,7 @@
         <div class="col-4 pt-5" v-for="(casino, index) in casinos" :key="index">
           <div class="card">
             <nuxt-img
+              preset="default"
               :src="`/images/anbieter/${casino.logo}`"
               class="card-img-top"
               alt="..."

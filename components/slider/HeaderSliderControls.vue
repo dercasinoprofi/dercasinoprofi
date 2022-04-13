@@ -11,6 +11,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <nuxt-img
+                  preset="default"
                   src="/images/header/header1.jpg"
                   class="d-block w-100"
                   alt="..."
@@ -24,6 +25,7 @@
               </div>
               <!-- <div class="carousel-item">
                 <nuxt-img
+                preset="default"
                   src="/images/header/header2.jpg"
                   class="d-block w-100"
                   alt="..."
@@ -31,6 +33,7 @@
               </div>
               <div class="carousel-item">
                 <nuxt-img
+                preset="default"
                   src="/images/header/header3.jpg"
                   class="d-block w-100"
                   alt="..."
@@ -38,6 +41,7 @@
               </div>
               <div class="carousel-item">
                 <nuxt-img
+                preset="default"
                   src="/images/header/header4.jpg"
                   class="d-block w-100"
                   alt="..."
@@ -45,6 +49,7 @@
               </div>
               <div class="carousel-item">
                 <nuxt-img
+                preset="default"
                   src="/images/header/header5.jpg"
                   class="d-block w-100"
                   alt="..."

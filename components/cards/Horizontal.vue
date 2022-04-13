@@ -4,6 +4,7 @@
       <div class="row g-0">
         <div class="col-md-4">
           <nuxt-img
+            preset="default"
             src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
             alt="Trendy Pants and Shoes"
             class="img-fluid rounded-start"

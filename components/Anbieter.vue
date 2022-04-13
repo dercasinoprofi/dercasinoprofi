@@ -13,6 +13,7 @@
               :title="provider.name"
             >
               <nuxt-img
+                preset="default"
                 :src="`/images/provider/${provider.logo}`"
                 class="card-img-top"
                 :alt="provider.name"

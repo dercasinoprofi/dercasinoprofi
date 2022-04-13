@@ -36,7 +36,7 @@ with open('slots.html', 'r') as f:
         if game:
             name = game['title'].strip()
             url = game['href']
-            thumbnail = game.find('img', src=True)['src']
+            thumbnail = game.find('img', src=True)['src'].replace('™', '')
             iframe_src = get_iframe_src(url)
 
             image_name = download_image(thumbnail, name, provider)
