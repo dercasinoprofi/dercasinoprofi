@@ -14,7 +14,7 @@
           <div class="col-sm-2">
             <ul class="sitemap-links">
               <li><a href="/">Casino Vergleicher</a></li>
-              <li><a href="/slots/">Slots</a></li>
+              <!-- <li><a href="/slots/">Slots</a></li> -->
             </ul>
           </div>
           <div class="col-sm-2">

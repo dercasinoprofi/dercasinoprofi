@@ -25,6 +25,15 @@
           </div> -->
         </div>
       </div>
+      <div class="row pt-5">
+        <div class="col-12 text-center">
+          <nuxt-link :to="`/provider/${game.provider}/1/`">
+            <button class="pageButtons buttons btn btn-primary">
+              Mehr Pragmatic Play Slots
+            </button>
+          </nuxt-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -51,6 +60,18 @@ import config from "../../assets/config";
 
 export default {
   name: "game",
+  head() {
+    return {
+      title: `${this.game.name} Slot kostenlos Spielen | ${config.siteName}`,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: `Spiele den Slot ${this.game.name} kostenlos beim SlotProfi. Spielgeld Einsatz, damit du den Slot ${this.game.name} kostenlos testen kannst.`,
+        },
+      ],
+    };
+  },
   async asyncData({ route, $axios }) {
     const slug = route.params.slug;
     const params = {

@@ -1,91 +1,76 @@
 <template>
   <div>
-    <div class="container-fluid pt-2 pb-2">
-      <div class="text-center">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
         <nuxt-link class="navbar-brand" to="/" :title="config.title">
-          <img
-            src="/images/logo/logo.png"
+          <nuxt-img
+            src="/images/logo/logo_transparent.png"
             :alt="config.siteName"
-            class="d-inline-block align-text-top"
+            height="70"
           />
         </nuxt-link>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-custom container roundCorners">
-      <div class="container-fluid">
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
             <li
               v-for="(link, index) in navigationLinks"
               :key="index"
-              class="nav-item text-light fw-bold"
+              class="nav-item"
             >
               <nuxt-link
-                class="nav-link active removeLink"
+                class="nav-link"
                 aria-current="page"
                 :to="link.url"
                 :title="link.title"
                 >{{ link.name }}</nuxt-link
               >
             </li>
-
-            <li
-              class="nav-item text-light fw-bold"
-              v-for="(provider, index) in config.provider"
-              :key="index"
-            >
-              <nuxt-link
-                class="nav-link active removeLink"
-                aria-current="page"
-                :to="`/provider/${provider.key}/1/`"
-                :title="provider.name"
-                >{{ provider.name }}</nuxt-link
-              >
-            </li>
-          </ul>
-
-          <!-- <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
-                id="navbarDropdownMenuLink"
+                id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Slots
               </a>
               <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdown"
               >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li v-for="(provider, index) in config.provider" :key="index">
+                  <nuxt-link
+                    class="dropdown-item"
+                    :to="`/provider/${provider.key}/1/`"
+                    :title="`${provider.name} Slots`"
+                    >{{ provider.name }}</nuxt-link
+                  >
+                </li>
+                <!-- <li>
+                  <hr class="dropdown-divider" />
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+                </li> -->
               </ul>
-            </li> -->
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -111,19 +96,15 @@ export default {
 </script>
 
 <style scoped>
-/* Modify the background color */
-.navbar-custom {
-  background-color: green;
+.navFont {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(149, 138, 138);
 }
-
+/* Modify the background color */
 .link-unstyled,
 .link-unstyled:link,
 .link-unstyled:hover {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-.removeLink {
   color: inherit;
   text-decoration: inherit;
 }

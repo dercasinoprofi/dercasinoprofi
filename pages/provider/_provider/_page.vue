@@ -40,6 +40,13 @@
           </ul>
         </div>
       </div>
+      <div class="row pt-5" v-if="pageNumber === 1">
+        <div class="container"></div>
+        <div class="col-12">
+          <h1 class="text-center pb-2">{{ p.name }}</h1>
+          {{ p.seo.seoText }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -49,19 +56,14 @@ import config from "../../../assets/config";
 
 export default {
   name: "providerSubpage",
-  data() {
-    return {};
-  },
   head() {
-    const p = config.provider.find((x) => x.key === this.provider);
-
     return {
-      title: p.meta.title,
+      title: this.p.meta.title,
       meta: [
         {
           hid: "description",
           name: "description",
-          content: p.meta.metaDescription,
+          content: this.p.meta.metaDescription,
         },
         {
           hid: "robots",
@@ -83,7 +85,6 @@ export default {
       provider,
     };
     const data = await $axios.get(config.slotsUrl, { params });
-    console.log(data);
 
     if (!data.data.slots.length) {
       return Error({ statusCode: 404, message: "No videos found!" });
@@ -94,11 +95,14 @@ export default {
       pageNumber <= maximalPaginationSize;
     const games = nextPage ? data.data.slots.slice(0, -1) : data.data.slots;
 
+    // seo
+    const p = config.provider.find((x) => x.key === provider);
     return {
       games,
       nextPage,
       pageNumber,
       provider,
+      p,
     };
   },
   computed: {
